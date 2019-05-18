@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Town</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://use.fontawesome.com/0edb38fa41.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".hamburger-btn .fa-times").hide();
+
+        $(".hamburger-btn .fa-bars").click(function() {
+          $(this).hide();
+          $(".hamburger-btn .fa-times").show();
+
+          $(".mobile ul").addClass("active");
+        });
+
+        $(".hamburger-btn .fa-times").click(function() {
+          $(this).hide();
+          $(".hamburger-btn .fa-bars").show();
+          $(".mobile ul").removeClass("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/city-hall-icon-51.png" alt="town logo" id="logo" />
+      <section class="title">
+        <h2>Weather Town</h2>
+        <div class="motto">
+          <h3>a neighborly weather site</h3>
+        </div>
+      </section>
+    </header>
+    <div class="container">
+      <nav class="desk">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="preston-4a.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile">
+        <div class="hamburger-btn">
+          <i class="fa fa-bars" aria-hidden="true"> Menu</i>
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mainContainer">
+      <main>
+        <h1>Preston Idaho</h1>
+        <img src="./images/town2.jpeg" alt="town image" />
+        <aside>
+          <p>Weather Summary</p>
+        </aside>
+        <article>
+          <h2>Article Title</h2>
+          <h4>by Author's Name</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            accusantium culpa recusandae? Quia, facilis odit at sapiente quae
+            sint temporibus autem? Accusamus ea ducimus voluptates modi! Sunt
+            quidem recusandae porro.
+          </p>
+          <img src="./images/community.jpeg" alt="people sitting on lawn" />
+        </article>
+        <section class="contact">
+          <h3>Contact Information</h3>
+          <p>Weather Town</p>
+          <p>30 N 1st E</p>
+          <p>Preston, ID 83263</p>
+          <p>999.999.9999</p>
+          <img src="./images/map.jpeg" alt="map" id="map" />
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p>
+        &copy;2019 Weather Town | Attributions | Shan'l Parish | Today's Date
+      </p>
+    </footer>
+  </body>
+</html>
