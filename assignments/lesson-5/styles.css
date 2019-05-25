@@ -92,23 +92,6 @@ footer {
   left: 0;
 }
 
-nav.desk ul {
-  list-style: none;
-  width: 80%;
-  height: 50px;
-  margin: 0 auto;
-}
-
-nav.desk ul li {
-  width: 15%;
-  float: left;
-  text-align: center;
-  line-height: 50px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
 nav ul li:hover {
   background: #808080;
 }
