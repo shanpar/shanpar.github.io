@@ -154,7 +154,7 @@ article {
   padding: 25px;
 }
 #articleTitle {
-  margin: 20px 0 px;
+  margin: 20px 0;
 }
 article p {
   font-family: "Montserrat", sans-serif;
@@ -228,6 +228,6 @@ footer {
   width: 80%;
 }
 footer p {
-  horizontal-align: center;
+  text-align: center;
   margin-top: 15px;
 }
