@@ -23,12 +23,12 @@ header figure img {
 main {
   margin-top: 0;
 }
-div.herodiv h2 {
+main h2 {
   font-size: 28px;
   text-align: center;
 }
 
-main.pageId {
+.pageId {
   margin-top: 20px;
   text-align: left;
   color: #eb7903;
