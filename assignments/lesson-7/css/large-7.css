@@ -19,12 +19,21 @@ header figure img {
   margin: 0 35px;
   width: 100px;
 }
-
+/* main */
 main {
   margin-top: 0;
 }
-.herodiv h2 {
-  font-size: 35px;
+div.herodiv h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+main.pageId {
+  margin-top: 20px;
+  text-align: left;
+  color: #eb7903;
+  font-size: 28px;
+  padding: 10px 0;
 }
 /* navigation */
 
@@ -90,14 +99,6 @@ article {
   width: 40%;
   margin-right: 100px;
 } */
-/* main */
-main h2 {
-  margin-top: 20px;
-  text-align: left;
-  color: #eb7903;
-  font-size: 28px;
-  padding: 10px 0;
-}
 
 section.contact {
   display: block;

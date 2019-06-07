@@ -3,9 +3,9 @@
 // 2) calculates the windchill value
 // 3) outputs the result to the new line item in the weather summary.
 
-let tempF = parseInt(document.getElementById("temp").innerHTML);
-let speed = parseInt(document.getElementById("windSpeed").innerHTML);
-let chill = windChill(tempF, speed);
+var tempF = parseInt(document.getElementById("temp").innerHTML);
+var speed = parseInt(document.getElementById("windSpeed").innerHTML);
+var chill = windChill(tempF, speed);
 
 var digits = 2;
 var multiplier = Math.pow(10, digits);
