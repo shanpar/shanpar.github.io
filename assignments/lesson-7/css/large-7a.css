@@ -1,0 +1,11 @@
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navbar button {
+  display: none;
+}
+.main-nav li {
+  display: block;
+}
