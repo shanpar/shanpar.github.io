@@ -85,6 +85,10 @@ nav ul li {
 .fiveDayForecast {
   display: block;
   font-size: 1.1em;
+  text-align: center;
+}
+#forecast {
+  text-align: center;
 }
 /* article */
 article {
