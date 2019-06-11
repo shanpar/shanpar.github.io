@@ -27,14 +27,15 @@ tbody td {
   text-align: center;
   background-color: #e7ffed;
 }
+tbody tr:nth-child(4) td:nth-child(3) {
+  background-color: #628ca6;
+  color: white;
+}
 
 tbody tr:nth-child(odd) td {
   background-color: #e7f0ed;
 }
-.focused {
-  background-color: #628ca6;
-  color: white;
-}
+
 tfoot td {
   background-color: #7fb9c2;
   color: black;
