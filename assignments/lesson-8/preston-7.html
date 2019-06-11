@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Preston, Idaho Weather Page</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Preston city local weather page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/small-7.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/medium-7.css"
+      media="screen and (min-width:600px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/large-7.css"
+      media="screen and (min-width:960px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header clearfix">
+      <div class="header-left">
+        <figure class="logo">
+          <img
+            src="./images/logo0.png"
+            alt="town logo"
+            sizes="25vw"
+            srcset="
+              ./images/logo0.png  400w,
+              ./images/logo2.png  800w,
+              ./images/logo3.png 1200w
+            "
+          />
+        </figure>
+      </div>
+      <div class="header-right">
+        <h1>Weather Town</h1>
+        <h3><em>weather. . .the neighborly way</em></h3>
+      </div>
+    </header>
+    <header class="headerNav">
+      <div>
+        <!-- Collapsible content -->
+        <nav class="navbar">
+          <!-- hamburger menu symbol -->
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="primaryNav hide">
+            <li>
+              <a href="#" class="nav-link">Home </a>
+            </li>
+            <li class="active">
+              <a href="preston-7.html" class="nav-link">Preston</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Fish Haven</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Soda Springs</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Storm Center</a>
+            </li>
+            <li>
+              <a href="gallery-7.html" class="nav-link">Gallery</a>
+            </li>
+          </ul>
+          <!-- Links -->
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main>
+        
+          <h2>Preston Idaho</h2>
+<div class="herodiv"></div>
+          <img
+            src="./images/sky-original.jpeg"
+            alt="sky landscape image"
+            class="hero"
+            sizes="100vw"
+            srcset="
+              ./images/sky-small400.jpg   400w,
+              ./images/sky-medium800.jpg  800w,
+              ./images/sky-large1200.jpg 1200w
+            "
+          />
+
+          <aside class="weatherBox">
+            <h3 class="title">Weather Summary</h3>
+            <div class="label"><p>Currently :</p></div>
+            <div>
+              <p><span>Sunny</span></p>
+            </div>
+            <div class="label">
+              <p>High :</p>
+            </div>
+            <div>
+              <p><span id="temp"> 77</span>&deg;F</p>
+            </div>
+            <div class="label">
+              <p>Wind Chill :</p>
+            </div>
+            <div>
+              <p><span id="output"></span>&deg;F</p>
+            </div>
+            <div class="label"><p>Humidity :</p></div>
+            <div>
+              <p><span>69%</span></p>
+            </div>
+            <div class="label"><p>Wind Speed :</p></div>
+            <div>
+              <p><span id="windSpeed">5</span> mph</p>
+            </div>
+          </aside>
+        </div>
+        <div class="fiveDayForecast">
+          <h3 id="forecast">5 Day Forecast</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+                <th>Thurs</th>
+                <th>Fri</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="./images/sunny40.png" alt="sun icon" />
+                  <p>89&deg;F</p>
+                </td>
+                <td>
+                  <img src="./images/sunny40.png" alt="sun icon" />
+                  <p>88&deg;F</p>
+                </td>
+                <td>
+                  <img src="./images/sunny40.png" alt="sun icon" />
+                  <p>87&deg;F</p>
+                </td>
+                <td>
+                  <img src="./images/sunny40.png" alt="sun icon" />
+                  <p>75&deg;F</p>
+                </td>
+                <td>
+                  <img src="./images/sunny40.png" alt="sun icon" />
+                  <p>72&deg;F</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <article>
+          <img
+            src="./images/5bcf8bdd46516.image.jpg"
+            alt="vintage photo of Preston Idaho"
+            id="articleImg"
+            sizes="100vw"
+            srcset="
+              ./images/oldtown415.jpg  415w,
+              ./images/oldtown770.jpg  770w,
+              ./images/oldtown510.jpg 1200w
+            "
+          />
+          <div>
+            <h2>Developing Town: Preston Passionate for CV Pennant</h2>
+            <h4>by Claudia Erickson Citizen Correspondent</h4>
+          </div>
+
+          <p>
+            The Cache Valley Pennant was an item to be prized by the teams
+            playing in that crazy year when Preston citizens of all ages and
+            both genders were “nuts about baseball.” Feelings ran high and the
+            editors of the local newspapers added fuel to the fire with their
+            sports editorials from the south end of Cache Valley in Logan to the
+            north with Preston’s diatribe. In the August 5, 1909 edition of the
+            Preston News a headline read “Preston Robbed of Pennant“ and the
+            following article stated facts (as seen from this side of the
+            fence.) “The enmity of Cache Valley towns is plainly seen in the
+            action taken ….A coterie of partisan baseball directors got together
+            and by pooling their interests, literally robbed Preston of the
+            Cache Valley Pennant. All year Preston has played the crowds, the
+            umpires and policemen and never uttered a word of protest and even
+            won a great majority of the games than any other team, but when it
+            came to the final decision, Logan, Lewiston and Richmond got
+            together and voted that Richmond should have it.”
+            <span id="dots"> . . .</span>
+            <span id="more">
+              A week later there were comments that the publishers of the Logan
+              Journal were not happy with Preston’s perspective of the past
+              proceedings. As things go, the Preston paper followed Logan’s
+              complaints with this: “We have only been asking for fair play and
+              if our language is more forcible than polite, it has been called
+              for by petty jealousy and kindergarten pique displayed by some
+              baseball enthusiasts in this valley.” Preston’s editor, Watkin L.
+              Roe, a man of many words, always seemed able to give as good as he
+              got. The members of the Preston League Team of 1909 were a
+              mixture. Not all hailed from Preston. From a picture that Newell
+              Hart received he identified possible players as Bill Haworth, Phil
+              Margetts, Henry Head, a Keller from Mink Creek, Bert Harrison, Bob
+              Tippets and Miles Parker. Elmer Head was the mascot. Miles Parker
+              was the team’s manager and was employed as the railroad agent in
+              Preston. Two out of town team members were the pitcher, surname of
+              Smith, and the catcher Red Settes. Information on these players is
+              scarce, some not at all. Phil Margetts was a very active part of
+              the development of this area it seems, a business man, active in
+              theatricals, a musician with evidence of playing both drums and
+              violin. He also had a touring troupe that provided programs at the
+              Opera House and other communities. Teams from the north end of
+              Cache Valley that have appeared in the research of that time are
+              ones from Fairview, Mound Valley and Dayton. It is sensible to
+              assume the other villages had teams, since the sport was popular
+              throughout this area. Most of the last names of those players that
+              are identified in existing pictures are still prevalent in our
+              county in the 21st Century. Again, these were players of the game,
+              but lived full lives in their own communities as businessmen,
+              farmers, active in their chosen church affiliations. Baseball was
+              a part of everyday life for young and old. The Franklin County
+              Citizen of April 1912, writes that the Oneida Academy baseball
+              squad was busy practicing on the campus. Ward histories from all
+              over Franklin County speak of the various communities celebrating
+              Memorial Day, July 4, Pioneer Day on July 24. They all had a huge
+              feast, pot luck style, games for the younger ones and the big
+              event – a baseball game for entertainment. Village against
+              village. Most of these players were only interested amateurs, who
+              got together on their Saturday afternoons to relax and play some
+              ball. However, they were dedicated to the sport and many were very
+              good players. The competition provided just as much enthusiasm and
+              spirit as did those games that were played for the Cache Valley
+              Pennant.</span
+            >
+          </p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+        </article>
+
+        <section class="contact clearfix">
+          <div class="contactText">
+            <h3>Weather Town</h3>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+          </div>
+
+          <div id="phone">
+            <p>
+              <img src="./images/phone-icon-white.png" alt="phone icon" />
+              208.999.9999 <br />
+
+              <img src="./images/email-icon-white.png" alt="email icon" />
+              <a href="https://weathertown@tws.com">weathertown@tws.com</a>
+            </p>
+          </div>
+
+          <div id="socialMedia">
+            <a href="https://www.facebook.com"
+              ><img src="./images/facebook.png" alt="facebook icon"
+            /></a>
+            <a href="https://pinterest.com"
+              ><img src="./images/pinterest.png" alt="pinterest icon"
+            /></a>
+            <a href="https://twitter.com"
+              ><img src="./images/twitter.png" alt="twitter icon"
+            /></a>
+            <a href="https://instagram.com"
+              ><img src="./images/instagram.png" alt="instagram icon"
+            /></a>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=30%20N%201st%20E%20C%20Preston%20Idaho%2083263+(Weather%20Town)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            ></iframe
+            ><a href="https://www.maps.ie/map-my-route/"></a>
+          </div>
+          <br />
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p>
+        &copy;2019 Weather Town | Shan'l Parish |
+        <span id="displayDate"></span>
+      </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/readmore.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>
