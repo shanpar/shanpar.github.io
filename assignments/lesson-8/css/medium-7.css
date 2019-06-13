@@ -20,6 +20,11 @@ main h2 {
   font-size: 28px;
   padding: 10px 0;
 }
+/* -------WEATHERBOX---------- */
+.weatherBox {
+  top: 100px;
+  left: 20px;
+}
 article h2 {
   font-size: 1.5rem;
 }

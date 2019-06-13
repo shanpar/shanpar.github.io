@@ -1,63 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Thank you for filling out form" />
+    <meta name="author" content="Shanl Parish" />
 
-<!-- This start file was build by Paul Cheney  -->
-<title>HTML5 Start Site by Paul Cheney</title>
+    <title>Thank You Page</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-
-
-<!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
-
-
-     
-</head>
-<body>
-<!-- HEADER HERE -->
-	<header>
- <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- phone-default -->
+    <link rel="stylesheet" type="text/css" href="./css/small-7.css" />
+    <!-- enhance-tablet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/medium-7.css"
+      media="screen and (min-width:600px)"
+    />
+    <!-- enhance-desktop -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/large-7.css"
+      media="screen and (min-width:960px)"
+    />
+    <!--  font link  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <header class="header clearfix">
+      <div class="header-left">
+        <figure class="logo">
+          <img
+            src="./images/logo0.png"
+            alt="town logo"
+            sizes="25vw"
+            srcset="
+              ./images/logo0.png  400w,
+              ./images/logo2.png  800w,
+              ./images/logo3.png 1200w
+            "
+          />
+        </figure>
+      </div>
+      <div class="header-right">
+        <h1>Weather Town</h1>
+        <h3><em>weather. . .the neighborly way</em></h3>
+      </div>
     </header>
-    
-    
-<!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <ul >
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>    
-        </ul>
-    </nav>
-    
-    
-<!-- CONTENT HERE -->
-<main>
-    <h1>Course Proposal Application</h1>
-        <p>Thanks for applying to create a course for our online library. We will get back to you within a week with a response.</p>
+    <header class="headerNav">
+      <div>
+        <!-- NAVIGATION -->
+        <nav class="navbar">
+          <!-- hamburger menu symbol -->
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="primaryNav hide">
+            <li>
+              <a href="#" class="nav-link">Home </a>
+            </li>
+            <li>
+              <a href="./preston-7.html" class="nav-link">Preston</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Fish Haven</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Soda Springs</a>
+            </li>
+            <li class="active">
+              <a href="stormcenter.html" class="nav-link">Storm Center</a>
+            </li>
+            <li>
+              <a href="./gallery-7.html" class="nav-link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-          
-        
-    </main>
-    
-<!-- FOOTER HERE -->   
+    <!-- MAIN CONTENT -->
+    <div class="wrapper">
+      <main>
+        <h2 class="pageId">Storm Center</h2>
+        <p id="thanks">
+          Thank you for filling out our Storm Center Reporting form and
+          notifiying us of storms in your area. This information is important to
+          us. We will post this weather activity and take any needed action. You
+          may receive a follow-up call to ensure the safety of yourself and
+          others.
+        </p>
+      </main>
+    </div>
+
+    <!-- FOOTER HERE -->
     <footer>
-        &copy; 2018 &bull; Paul Cheney &bull; 123-555-6789
+      <p>
+        &copy;2019 Weather Town | Shan'l Parish |
+        <span id="displayDate"></span>
+      </p>
     </footer>
-<script src="js/scripts.js"></script>
-</body>
+    <script src="js/currentdate.js"></script>
+  </body>
 </html>

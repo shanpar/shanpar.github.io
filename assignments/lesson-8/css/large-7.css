@@ -19,7 +19,7 @@ header figure img {
   margin: 0 35px;
   width: 100px;
 }
-/* main */
+/*---------------- MAIN----------------- */
 main {
   margin-top: 0;
 }
@@ -29,13 +29,13 @@ main h2 {
 }
 
 .pageId {
-  margin-top: 20px;
+  margin: 20px 0;
   text-align: left;
   color: #eb7903;
   font-size: 28px;
   padding: 10px 0;
 }
-/* navigation */
+/* --------------NAVIGATION-------------- */
 
 .navbar button {
   display: none;
@@ -62,12 +62,12 @@ nav ul li {
   border: none;
 }
 
-/* weatherbox */
+/* ------------WEATHERBOX------------------- */
 
 .weatherBox {
-  width: auto;
-  height: auto;
-  top: 80px;
+  /* width: auto;
+  height: auto; */
+  top: 100px;
   left: 20px;
 }
 .weatherBox p {
@@ -80,7 +80,7 @@ nav ul li {
   width: 130px;
   padding-right: 4px;
 }
-/* 5 Day Forecast Table */
+/*------------ 5 DAY FORECAST TABLE---------- */
 
 .fiveDayForecast {
   display: block;
@@ -90,7 +90,7 @@ nav ul li {
 #forecast {
   text-align: center;
 }
-/* article */
+/* -------------ARTICLE------------------------ */
 article {
   margin-top: 50px;
 }
@@ -103,7 +103,11 @@ article {
   width: 40%;
   margin-right: 100px;
 } */
-
+/* -----------FORM--------------- */
+form input.submitBtn {
+  font-size: 1.2rem;
+}
+/* -----------CONTACT------------- */
 section.contact {
   display: block;
   grid-template-columns: auto;
@@ -138,6 +142,7 @@ section.contact iframe {
 #socialMedia img {
   width: 35px;
 }
+/* ----------FOOTER----------- */
 footer p {
   font-size: 14px;
 }
