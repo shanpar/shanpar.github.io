@@ -1,0 +1,481 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/*------------- Header-------------------- */
+
+.header {
+  /* padding: 2%; */
+  /* font-size: 1.8em; */
+  width: 100%;
+  background-color: #03808f;
+  color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.headerNav {
+  display: flex;
+  flex-direction: column;
+}
+.header-left {
+  align-self: flex-start;
+  margin: 20px;
+}
+.header-right {
+  align-self: auto;
+}
+.header-left img {
+  display: flex;
+  flex-direction: row;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+header h3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+header figure img {
+  /* float: left; */
+  /* margin: 0 20px;*/
+  width: 50px;
+}
+.wrapper {
+  text-align: center;
+}
+
+/* ------------------nav bar--------------------- */
+
+.navbar {
+  margin-top: 10px;
+  background-color: #404040;
+  border-top: #eb7903 solid 3px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.primaryNav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.nav-link {
+  text-decoration: none;
+  color: #e9e9e9;
+  display: block;
+  transition: 0.3s background-color;
+  padding: 0 0.5em;
+}
+.navbar button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #e9e9e9;
+  padding: 1% 0;
+}
+nav li {
+  display: block;
+  line-height: 44px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #808080;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.nav-link:hover {
+  background: #eb7903;
+  color: #e9e9e9;
+}
+
+nav li.active {
+  background: #808080;
+  color: #e9e9e9;
+  cursor: default;
+}
+nav ul.hide {
+  display: none;
+}
+
+/* -------------------main block----------------- */
+main {
+  width: 85%;
+  display: inline-block;
+  position: relative;
+  /* margin-top: 180px; */
+}
+main h2 {
+  color: #eb7903;
+  font-size: 24px;
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+main p#thanks {
+  margin: 20px 0 40px 0;
+  text-align: left;
+  line-height: 1.5em;
+}
+.pageId {
+  color: #eb7903;
+  font-size: 24px;
+  padding-top: 20px;
+}
+/* ---------Hero Div------------------- */
+main img.hero {
+  width: 100%;
+}
+
+/* main div.herodiv {
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+  padding: 0;
+} */
+
+/* ------------WEATHERBOX----------------- */
+.weatherBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  /* width: auto;
+  height: auto; */
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  background: #e9e9e9;
+  border: #eb7903 solid 2px;
+  padding: 10px;
+  box-shadow: 0 0 10px #000;
+  opacity: 0.85;
+  justify-items: start;
+  column-gap: 1em;
+  row-gap: 0.25em;
+}
+.label {
+  justify-self: end;
+  padding-left: 10px;
+}
+.title {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+.weatherBox h3 {
+  font-size: 1em;
+}
+.weatherBox p {
+  font-size: 0.85em;
+}
+
+aside h3 {
+  font-size: 1.1em;
+  color: #eb7903;
+  text-decoration: underline;
+}
+aside p {
+  line-height: 1.5em;
+}
+/* -----------------5 DAY FORECAST----------------- */
+.fiveDayForecast {
+  display: none;
+}
+table {
+  width: 75%;
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+#forecast {
+  padding: 10px;
+}
+table th {
+  color: #e9e9e9;
+  background: #eb7903;
+}
+table td,
+th {
+  border: 2px solid #404040;
+  padding: 10px;
+}
+table td img {
+  width: 40px;
+}
+/*-------------------- article------------------- */
+article {
+  text-align: left;
+  margin: 25px auto;
+  background-color: #e9e9e9;
+  padding: 15px;
+  width: 100%;
+}
+article h2 {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  text-align: left;
+}
+article h4 {
+  font-size: 0.75rem;
+  padding: 5px 0;
+}
+article p {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  line-height: 1.3em;
+  font-size: 0.9em;
+}
+article #more {
+  display: none;
+}
+article button {
+  margin-top: 1%;
+  background-color: #808080;
+  padding: 2px 5px;
+  color: white;
+  font-size: 14px;
+}
+#articleImg {
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #000;
+  margin: 0 1%;
+}
+/* -----------FORM-------------- */
+
+.form {
+  background-color: #e9e9e9;
+  border: 3px solid #eb7903;
+  padding: 1% 2%;
+  max-width: 35rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 1px #808080;
+}
+form legend {
+  text-align: left;
+  margin-left: 2%;
+}
+form fieldset {
+  margin: 2rem 0;
+  border: 2px solid #c2c2c2;
+  border-radius: 10px;
+  padding: 0.5rem 2% 1rem 2%;
+  width: 100%;
+  max-width: 33rem;
+}
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #333;
+  font-size: 0.9rem;
+  text-align: left;
+}
+form label.top input,
+form label.top select {
+  -webkit-appearance: none; /*makes formatting work better across different browsers*/
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem; /*makes them at least 44px for touchability*/
+  color: #555;
+  width: 100%;
+  max-width: 20rem; /*right size for small screen and limits width for larger screens so it doesn't stretch too wide*/
+  background-color: white;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0; /*makes them at least 44px for touchability*/
+  color: #555;
+  text-align: left;
+}
+form div.slidecontainer {
+  padding-bottom: 20px;
+}
+form label.slider {
+  display: block;
+  padding-top: 1rem;
+  width: 100%;
+  color: #333;
+  font-size: 0.9rem;
+  text-align: left;
+}
+form div.radio {
+  border: 1px dashed #eb7903;
+  padding: 3% 0 2% 3%;
+  border-radius: 10px;
+  margin: 3% 0 2% 0;
+  max-width: 20rem;
+}
+form label.comments {
+  display: block;
+  text-align: left;
+  border-radius: 10px;
+}
+form textarea {
+  -webkit-appearance: none; /*makes formatting work better across different browsers*/
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem; /*makes them at least 44px for touchability*/
+  color: #555;
+  width: 100%;
+  max-width: 20rem; /*right size for small screen and limits width for larger screens so it doesn't stretch too wide*/
+}
+
+form input.submitBtn {
+  border: 1px solid #c96a04;
+  background-color: #eb7903;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem; /*right size for small screen and limits width for larger screens so it doesn't stretch too wide*/
+  text-shadow: 0px 1px 0px #808080;
+  font-size: 1.1rem;
+}
+form input.submitBtn:hover {
+  background-color: #ec881d;
+}
+form label.top input:required {
+  border-left: #eb7903 solid 6px;
+}
+form label.top input:required:valid {
+  border-left: #06a438 solid 6px;
+}
+/*--------------- contact information ---------------*/
+section.contact {
+  background-color: #03808f;
+  color: #e9e9e9;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  text-align: left;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+section.contact div.map {
+  width: 100%;
+}
+section.contact iframe {
+  height: 300px;
+  width: 100%;
+  border: none;
+  margin: 0;
+  overflow: hidden;
+}
+#phone {
+  display: block;
+  margin-top: 20px;
+}
+
+#phone img,
+#email img {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px 0 0;
+  display: inline-block;
+}
+#phone a {
+  text-decoration: none;
+  color: #e9e9e9;
+}
+.contactText {
+  /* width: 50%; */
+  /* margin: 0 auto; */
+  text-align: left;
+  font-size: 1.3em;
+  margin-left: 2%;
+}
+.contactText p {
+  line-height: 1.3em;
+}
+#socialMedia {
+  padding-top: 10px;
+  float: left;
+}
+#socialMedia img {
+  /* padding: 3px; */
+  width: 25px;
+  margin: 5px;
+}
+/* footer */
+footer {
+  background-color: #404040;
+  color: #e9e9e9;
+  font-size: 1em;
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  padding: 20px;
+  width: 85%;
+}
+footer p {
+  text-align: center;
+  margin-top: 0;
+  font-size: 11px;
+}
+
+/* gallery CSS */
+.gallery {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1rem;
+  /* grid-auto-flow: dense; */
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+.gallery .card {
+  border: 1px solid #d3d3d3;
+  box-shadow: 0px 1px 3px #555;
+  background-color: white;
+  border-radius: 0.25rem;
+  align-content: center;
+}
+
+.content {
+  padding: 0.5rem 0.75rem;
+  line-height: 1.6em;
+  text-align: left;
+}
+figure img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

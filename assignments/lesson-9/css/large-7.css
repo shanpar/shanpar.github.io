@@ -1,0 +1,152 @@
+/* Media Query for large screens */
+/* 64em is also 1028 when basefont is 16px */
+
+main,
+footer {
+  max-width: 64rem;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 2.75rem;
+  margin-top: 5px;
+}
+header h3 {
+  font-size: 1.85rem;
+  margin-top: 8px;
+}
+header figure img {
+  margin: 0 35px;
+  width: 100px;
+}
+/*---------------- MAIN----------------- */
+main {
+  margin-top: 0;
+}
+main h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.pageId {
+  margin: 20px 0;
+  text-align: left;
+  color: #eb7903;
+  font-size: 28px;
+  padding: 10px 0;
+}
+/* --------------NAVIGATION-------------- */
+
+.navbar button {
+  display: none;
+}
+.primaryNav {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navbar {
+  font-size: 1.6em;
+}
+nav ul.hide {
+  display: flex;
+}
+nav ul li {
+  width: 17%;
+
+  border-bottom: none;
+  font-size: 0.6em;
+  line-height: 50px;
+  display: block;
+}
+.nav-link {
+  border: none;
+}
+
+/* ------------WEATHERBOX------------------- */
+
+.weatherBox {
+  /* width: auto;
+  height: auto; */
+  top: 100px;
+  left: 20px;
+}
+.weatherBox p {
+  font-size: 1.25em;
+}
+.weatherBox h3 {
+  font-size: 1.35em;
+}
+.weatherBox p span {
+  width: 130px;
+  padding-right: 4px;
+}
+/*------------ 5 DAY FORECAST TABLE---------- */
+
+.fiveDayForecast {
+  display: block;
+  font-size: 1.1em;
+  text-align: center;
+}
+#forecast {
+  text-align: center;
+}
+/* -------------ARTICLE------------------------ */
+article {
+  margin-top: 50px;
+  width: 100%;
+}
+article h2 {
+  text-align: left;
+}
+#articleImg {
+  float: right;
+  width: 50%;
+  margin: 1% 1% 1% 2%;
+}
+
+/* -----------FORM--------------- */
+form input.submitBtn {
+  font-size: 1.2rem;
+}
+/* -----------CONTACT------------- */
+section.contact {
+  display: block;
+  grid-template-columns: auto;
+}
+section.contact div.map {
+  width: 50%;
+  float: right;
+  margin-top: -150px;
+}
+
+section.contact iframe {
+  height: 300px;
+}
+
+.contactText {
+  text-align: left;
+  font-size: 1.3em;
+  margin-left: 2%;
+  width: 40%;
+}
+#phone {
+  padding-left: 2%;
+  width: 40%;
+}
+.contact {
+  display: flex;
+}
+#socialMedia {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#socialMedia img {
+  width: 35px;
+}
+/* ----------FOOTER----------- */
+footer p {
+  font-size: 14px;
+}
+.card:hover {
+  box-shadow: 0 0 10px #333;
+}

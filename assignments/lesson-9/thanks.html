@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Thank you for filling out form" />
+    <meta name="author" content="Shanl Parish" />
+
+    <title>Thank You Page</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- phone-default -->
+    <link rel="stylesheet" type="text/css" href="./css/small-7.css" />
+    <!-- enhance-tablet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/medium-7.css"
+      media="screen and (min-width:600px)"
+    />
+    <!-- enhance-desktop -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/large-7.css"
+      media="screen and (min-width:960px)"
+    />
+    <!--  font link  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <header class="header clearfix">
+      <div class="header-left">
+        <figure class="logo">
+          <img
+            src="./images/logo0.png"
+            alt="town logo"
+            sizes="25vw"
+            srcset="
+              ./images/logo0.png  400w,
+              ./images/logo2.png  800w,
+              ./images/logo3.png 1200w
+            "
+          />
+        </figure>
+      </div>
+      <div class="header-right">
+        <h1>Weather Town</h1>
+        <h3><em>weather. . .the neighborly way</em></h3>
+      </div>
+    </header>
+    <header class="headerNav">
+      <div>
+        <!-- NAVIGATION -->
+        <nav class="navbar">
+          <!-- hamburger menu symbol -->
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="primaryNav hide">
+            <li>
+              <a href="index.html" class="nav-link">Home </a>
+            </li>
+            <li>
+              <a href="./preston-7.html" class="nav-link">Preston</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Fish Haven</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Soda Springs</a>
+            </li>
+            <li class="active">
+              <a href="stormcenter.html" class="nav-link">Storm Center</a>
+            </li>
+            <li>
+              <a href="./gallery-7.html" class="nav-link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="wrapper">
+      <main>
+        <h2 class="pageId">Storm Center</h2>
+        <p id="thanks">
+          Thank you for notifying us of storms in your area. This information is
+          important to us. We will post this weather activity and take any
+          needed action. If you feel you are in danger, you may receive a
+          follow-up phone call from our Storm Center staff to ensure your safety
+          and the safety of others.
+        </p>
+      </main>
+    </div>
+
+    <!-- FOOTER HERE -->
+    <footer>
+      <p>
+        &copy;2019 Weather Town | Shan'l Parish |
+        <span id="displayDate"></span>
+      </p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+  </body>
+</html>
