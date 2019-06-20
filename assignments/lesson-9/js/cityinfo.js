@@ -8,14 +8,14 @@ request.send();
 request.onload = function() {
   var data = request.response;
   populateHeader(data);
-  showHeroes(data);
+  showData(data);
 };
 function populateHeader(jsonObj) {
   var myH1 = document.createElement("h1");
   myH1.textContent = jsonObj["motto"];
   header.appendChild(myH1);
 }
-function showHeroes(jsonObj) {
+function showData(jsonObj) {
   var towndata = jsonObj["towns"];
   for (var i = 0; i < towndata.length; i++) {
     var myArticle = document.createElement("article");
@@ -23,8 +23,7 @@ function showHeroes(jsonObj) {
     var myPara1 = document.createElement("p");
     var myPara2 = document.createElement("p");
     var myPara3 = document.createElement("p");
-    var myList = document.createElement("ul");
-    myH2.textContent = heroes[i].name;
+
     myPara1.textContent = "Year Founded: " + towndata[i].yearFounded;
     myPara2.textContent = "Population: " + towndata[i].currentPopulation;
     myPara3.textContent = "Average Rainfall: " + towndata[i].averageRainfall;
