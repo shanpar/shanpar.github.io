@@ -19,7 +19,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
 }
-/*------------- Header-------------------- */
+/*------------- HEADER-------------------- */
 
 .header {
   /* padding: 2%; */
@@ -66,7 +66,7 @@ header figure img {
   text-align: center;
 }
 
-/* ------------------nav bar--------------------- */
+/* -------------NAVIGATION BAR--------------- */
 
 .navbar {
   margin-top: 10px;
@@ -120,7 +120,7 @@ nav ul.hide {
   display: none;
 }
 
-/* -------------------main block----------------- */
+/* -------------------MAIN BLOCK----------------- */
 main {
   width: 85%;
   display: inline-block;
@@ -143,17 +143,10 @@ main p#thanks {
   font-size: 24px;
   padding-top: 20px;
 }
-/* ---------Hero Div------------------- */
+/* ---------HERO DIV------------------- */
 main img.hero {
   width: 100%;
 }
-
-/* main div.herodiv {
-  margin: 10px 0;
-  position: relative;
-  width: 100%;
-  padding: 0;
-} */
 
 /* ------------WEATHERBOX----------------- */
 .weatherBox {
@@ -221,80 +214,34 @@ th {
 table td img {
   width: 40px;
 }
-/* ---------------CITY STATS CARDS------------ */
-/* .city {
-  width: 90%;
-  max-width: 1240px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
-}
-.card {
-  background: #e9e9e9;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba (0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  position: relative;
-  top: 0;
-  transition: all 0.1s ease-in;
-}
-.card:hover {
-  top: -2px;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-} */
-/* main div.citydata {
-  display: flex;
-  flex-direction: column;
-}
-main div.cityDiv {
-  display: flex;
-  flex-direction: column; */
-/* width: 100%; */
-/* justify-content: space-between;
-  align-content: center;
-  background-color: #e9e9e9;
-  margin: 20px 0;
-  flex-basis: 100%;
-  flex: 1;
-} */
 
-/* main div.cityDiv h2 {
-  text-align: center;
-}
-div.cityDiv img {
-  width: 95%;
-} */
-/*-------------------- article------------------- */
-article {
+/*-------------------- NEWS ARTICLE------------------- */
+.townArticle {
   text-align: left;
   margin: 25px auto;
   background-color: #e9e9e9;
   padding: 15px;
   width: 100%;
 }
-article h2 {
+.townArticle h2 {
   font-size: 1.25rem;
   margin-top: 10px;
   text-align: left;
 }
-article h4 {
+.townArticle h4 {
   font-size: 0.75rem;
   padding: 5px 0;
 }
-article p {
+.townArticle p {
   font-family: "Montserrat", sans-serif;
   margin-top: 10px;
   line-height: 1.3em;
   font-size: 0.9em;
 }
-article #more {
+.townArticle #more {
   display: none;
 }
-article button {
+.townArticle button {
   margin-top: 1%;
   background-color: #808080;
   padding: 2px 5px;
@@ -415,7 +362,7 @@ form label.top input:required {
 form label.top input:required:valid {
   border-left: #06a438 solid 6px;
 }
-/*--------------- contact information ---------------*/
+/*--------------- CONTACT INFO ---------------*/
 section.contact {
   background-color: #03808f;
   color: #e9e9e9;
@@ -471,7 +418,7 @@ section.contact iframe {
   width: 25px;
   margin: 5px;
 }
-/* footer */
+/*---------- FOOTER --------*/
 footer {
   background-color: #404040;
   color: #e9e9e9;
@@ -508,7 +455,6 @@ figure {
   border-radius: 0.25rem;
   align-content: center;
 }
-
 .content {
   padding: 0.5rem 0.75rem;
   line-height: 1.6em;
@@ -519,6 +465,7 @@ figure img {
   height: 100%;
   width: 100%;
 }
+
 /* -------------TOWN STAT CARDS------------- */
 .towngallery {
   margin: 20px 0;
@@ -526,23 +473,56 @@ figure img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1rem;
-  /* grid-auto-flow: dense; */
 }
 .towncard {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #d3d3d3;
   box-shadow: 0px 1px 3px #555;
   background-color: white;
   border-radius: 0.25rem;
   align-content: center;
 }
+.towncard h3 {
+  font-style: italic;
+  font-size: 1em;
+  color: #716f6f;
+  margin: 5px 0;
+}
+
 .towncard .cardh2 {
   text-align: center;
+  padding: 10px 0;
+  background-color: #eb7903;
+  opacity: 0.85;
+  color: white;
+  margin: 10px 8px 10px 8px;
+  border-radius: 3px;
 }
-.cardcontent p {
+
+.towncard figure.image {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  padding: 8px;
+}
+.towncard figure img {
+  border-radius: 3px;
+}
+.towncard article {
   text-align: center;
-  margin-bottom: 10px;
+  color: #716f6f;
+  margin: 15px 8px;
+  line-height: 1.5em;
 }
-/* clearfix */
+.towncard hr {
+  background-color: #716f6f;
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+/* ----------clearfix------------- */
 .clearfix:after {
   content: "";
   display: table;
