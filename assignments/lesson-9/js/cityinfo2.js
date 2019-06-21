@@ -18,7 +18,14 @@ function showData(jsonObj) {
       towndata[i].name == "Fish Haven" ||
       towndata[i].name == "Soda Springs"
     ) {
-      var townname = document.getElementById(towndata[i].name);
+      var string = "";
+      for (var j = 0; j < towndata[i].name.length; j++) {
+        if (towndata[i].name.charAt(j) != " ") {
+          string += towndata[i].name.charAt(j);
+        }
+      }
+      console.log(string);
+      var townname = document.getElementById(string);
       var myH3 = document.createElement("h3");
       myH3.textContent = towndata[i].motto;
       townname.appendChild(myH3);
@@ -31,7 +38,7 @@ function showData(jsonObj) {
       myPara1.textContent = "Year Founded: " + towndata[i].yearFounded;
       myPara2.textContent = "Population: " + towndata[i].currentPopulation;
       myPara3.textContent =
-        "Average Rainfall: " + towndata[i].averageRainfall + " inches";
+        "Average Rainfall: " + towndata[i].averageRainfall + '"';
       myArticle.appendChild(myH3);
       myArticle.appendChild(myPara1);
       myArticle.appendChild(myPara2);

@@ -205,6 +205,7 @@ table {
 table th {
   color: #e9e9e9;
   background: #eb7903;
+  opacity: 0.85;
 }
 table td,
 th {
@@ -225,8 +226,8 @@ table td img {
 }
 .townArticle h2 {
   font-size: 1.25rem;
-  margin-top: 10px;
   text-align: left;
+  margin-top: 0;
 }
 .townArticle h4 {
   font-size: 0.75rem;
@@ -468,7 +469,7 @@ figure img {
 
 /* -------------TOWN STAT CARDS------------- */
 .towngallery {
-  margin: 20px 0;
+  margin: 25px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);

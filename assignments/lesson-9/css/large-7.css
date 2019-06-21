@@ -91,6 +91,9 @@ nav ul li {
   text-align: center;
 }
 /* ----------CITY DATA BOXES------------------ */
+.towngallery {
+  margin: 40px 0 10px 0;
+}
 .towncard:hover {
   box-shadow: 0 0 10px #333;
 }
@@ -122,6 +125,7 @@ article h2 {
 form input.submitBtn {
   font-size: 1.2rem;
 }
+
 /* -----------CONTACT------------- */
 section.contact {
   display: block;
