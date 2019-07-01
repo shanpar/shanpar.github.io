@@ -1,0 +1,56 @@
+/* ------HEADER------------ */
+
+header figure img {
+  width: 75px;
+  margin: 0 25px;
+}
+header h1 {
+  font-size: 2rem;
+}
+header h3 {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+/* --------NAVIGATION-------- */
+nav button {
+  font-size: 1.75rem;
+}
+nav {
+  margin-top: 20px;
+}
+/* --------MAIN-------------- */
+main h2 {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 28px;
+  padding: 10px 0;
+}
+/* -------WEATHERBOX---------- */
+.weatherBox {
+  top: 100px;
+  left: 20px;
+}
+/* --------ARTICLE------------ */
+article h2 {
+  font-size: 1.5rem;
+}
+article h4 {
+  font-size: 0.8rem;
+}
+article p {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  line-height: 1.3em;
+  font-size: 1em;
+}
+
+#articleImg {
+  margin: 0;
+}
+/* -------TOWN CARDS------- */
+
+/* -------FOOTER---------- */
+footer p {
+  font-size: 12px;
+}
