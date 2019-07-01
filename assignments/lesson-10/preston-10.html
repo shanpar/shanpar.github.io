@@ -56,13 +56,13 @@
               <a href="index-9.html" class="nav-link">Home </a>
             </li>
             <li class="active">
-              <a href="preston-7.html" class="nav-link">Preston</a>
+              <a href="preston-10.html" class="nav-link">Preston</a>
             </li>
             <li>
-              <a href="#" class="nav-link">Fish Haven</a>
+              <a href="fishhaven.html" class="nav-link">Fish Haven</a>
             </li>
             <li>
-              <a href="#" class="nav-link">Soda Springs</a>
+              <a href="sodasprings.html" class="nav-link">Soda Springs</a>
             </li>
             <li>
               <a href="stormcenter.html" class="nav-link">Storm Center</a>
@@ -71,7 +71,6 @@
               <a href="gallery-7.html" class="nav-link">Gallery</a>
             </li>
           </ul>
-          <!-- Links -->
         </nav>
       </div>
     </header>
@@ -91,74 +90,51 @@
           "
         />
         <!-- /></div> -->
-
+        <!-- WEATHER BOX -->
         <aside class="weatherBox">
           <h3 class="title">Weather Summary</h3>
           <div class="label"><p>Currently :</p></div>
           <div>
-            <p><span>Sunny</span></p>
+            <p><span id="currently">Sunny</span></p>
           </div>
           <div class="label">
             <p>High :</p>
           </div>
           <div>
-            <p><span id="temp"> 77</span>&deg;F</p>
+            <p><span id="temp"></span>&deg;F</p>
           </div>
           <div class="label">
             <p>Wind Chill :</p>
           </div>
           <div>
-            <p><span id="output"></span>&deg;F</p>
+            <p><span id="windchill"></span>&deg;F</p>
           </div>
           <div class="label"><p>Humidity :</p></div>
           <div>
-            <p><span>69%</span></p>
+            <p><span id="humidity"></span>%</p>
           </div>
           <div class="label"><p>Wind Speed :</p></div>
           <div>
             <p><span id="windSpeed">5</span> mph</p>
           </div>
         </aside>
-
+        <!------------FIVE DAY FORECAST------------>
         <div class="fiveDayForecast">
           <h3 id="forecast">5 Day Forecast</h3>
           <table>
-            <thead>
-              <tr>
-                <th>Mon</th>
-                <th>Tues</th>
-                <th>Wed</th>
-                <th>Thurs</th>
-                <th>Fri</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="./images/sunny40.png" alt="sun icon" />
-                  <p>89&deg;F</p>
-                </td>
-                <td>
-                  <img src="./images/sunny40.png" alt="sun icon" />
-                  <p>88&deg;F</p>
-                </td>
-                <td>
-                  <img src="./images/sunny40.png" alt="sun icon" />
-                  <p>87&deg;F</p>
-                </td>
-                <td>
-                  <img src="./images/sunny40.png" alt="sun icon" />
-                  <p>75&deg;F</p>
-                </td>
-                <td>
-                  <img src="./images/sunny40.png" alt="sun icon" />
-                  <p>72&deg;F</p>
-                </td>
-              </tr>
-            </tbody>
+            <thead></thead>
+            <tbody></tbody>
           </table>
         </div>
 
+        <!-------EVENTS--------- -->
+        <article class="townEvents">
+          <h3 class="title">Town Events</h3>
+          <hr />
+          <div id="events"></div>
+        </article>
+
+        <!-----ARTICLE-------- -->
         <article class="townArticle">
           <img
             src="./images/5bcf8bdd46516.image.jpg"
@@ -288,11 +264,18 @@
       <p>
         &copy;2019 Weather Town | Shan'l Parish |
         <span id="displayDate"></span>
+        |
+        <a href="https://openweathermap.org">Open Weather Map</a>
       </p>
     </footer>
+
+    <script src="js/weatherapi.js"></script>
+    <script src="js/forecastapi.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/readmore.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/events2.js"></script>
+
+    <!-- <script src="js/windchill.js"></script> -->
   </body>
 </html>

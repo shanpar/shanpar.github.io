@@ -1,6 +1,6 @@
 let weatherRequest = new XMLHttpRequest();
 let apiURLstring =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=25f95d7b36b3ee23a983accb3604e8ae";
+  "https://api.openweathermap.org/data/2.5/weather?id=5678757&units=imperial&APPID=25f95d7b36b3ee23a983accb3604e8ae";
 weatherRequest.open("GET", apiURLstring, true);
 weatherRequest.send();
 
@@ -31,4 +31,11 @@ weatherRequest.onload = function() {
   }
   document.getElementById("windchill").innerHTML = chill;
   document.getElementById("humidity").innerHTML = weatherData.main.humidity;
+
+  // var icon =
+  //   "http://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
+  // var desc = weatherData.weather[0].description;
+
+  // document.getElementById("currentImg").setAttribute("src", icon);
+  // document.getElementById("currentImg").setAttribute("alt", desc);
 };

@@ -146,6 +146,7 @@ main p#thanks {
 /* ---------HERO DIV------------------- */
 main img.hero {
   width: 100%;
+  margin-bottom: 6rem;
 }
 
 /* ------------WEATHERBOX----------------- */
@@ -215,11 +216,30 @@ th {
 table td img {
   width: 40px;
 }
+/* ------------------EVENTS---------------------- */
 
+article.townEvents {
+  width: 100%;
+}
+div#events ul {
+  list-style-type: none;
+  line-height: 1.5rem;
+  text-align: left;
+  font-size: 0.8rem;
+  padding-left: 20px;
+}
+div#events {
+  margin: 0.5rem 0;
+}
+.townEvents h3.title {
+  text-align: left;
+  color: #eb7903;
+  padding-left: 10px;
+}
 /*-------------------- NEWS ARTICLE------------------- */
 .townArticle {
   text-align: left;
-  margin: 25px auto;
+  margin: 3rem auto;
   background-color: #e9e9e9;
   padding: 15px;
   width: 100%;
@@ -434,6 +454,10 @@ footer p {
   text-align: center;
   margin-top: 0;
   font-size: 11px;
+}
+footer a {
+  /* text-decoration: none; */
+  color: #e9e9e9;
 }
 
 /*------------ GALLERY  ---------------*/

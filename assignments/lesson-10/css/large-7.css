@@ -90,6 +90,11 @@ nav ul li {
 #forecast {
   text-align: center;
 }
+
+/* ----------EVENTS------------------ */
+div#events ul {
+  font-size: 1rem;
+}
 /* ----------CITY DATA BOXES------------------ */
 .towngallery {
   margin: 40px 0 10px 0;
@@ -109,7 +114,7 @@ nav ul li {
 
 /* -------------ARTICLE------------------------ */
 article {
-  margin-top: 50px;
+  margin-top: 3rem;
   width: 100%;
 }
 article h2 {
