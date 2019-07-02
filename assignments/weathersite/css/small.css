@@ -507,6 +507,9 @@ figure img {
   border-radius: 0.25rem;
   align-content: center;
 }
+.towngallery a {
+  text-decoration: none;
+}
 .towncard h3 {
   font-style: italic;
   font-size: 1em;
