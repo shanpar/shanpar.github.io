@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Soda Springs, Idaho Weather Page</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Soda Springs City local weather page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/small.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/medium.css"
+      media="screen and (min-width:600px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/large.css"
+      media="screen and (min-width:960px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header clearfix">
+      <div class="header-left">
+        <figure class="logo">
+          <img
+            src="./images/logo0.png"
+            alt="town logo"
+            sizes="25vw"
+            srcset="
+              ./images/logo0.png  400w,
+              ./images/logo2.png  800w,
+              ./images/logo3.png 1200w
+            "
+          />
+        </figure>
+      </div>
+      <div class="header-right">
+        <h1>Weather Town</h1>
+        <h3><em>weather. . .the neighborly way</em></h3>
+      </div>
+    </header>
+    <header class="headerNav">
+      <div>
+        <!-- Collapsible content -->
+        <nav class="navbar">
+          <!-- hamburger menu symbol -->
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="primaryNav hide">
+            <li>
+              <a href="index.html" class="nav-link">Home </a>
+            </li>
+            <li>
+              <a href="preston.html" class="nav-link">Preston</a>
+            </li>
+            <li>
+              <a href="fishhaven.html" class="nav-link">Fish Haven</a>
+            </li>
+            <li class="active">
+              <a href="sodasprings.html" class="nav-link">Soda Springs</a>
+            </li>
+            <li>
+              <a href="stormcenter.html" class="nav-link">Storm Center</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main>
+        <h2>Soda Springs</h2>
+        <!-- <div class="herodiv"> -->
+        <img
+          src="./images/sky-original.jpeg"
+          alt="sky landscape image"
+          class="hero"
+          sizes="100vw"
+          srcset="
+            ./images/sky-small400.jpg   400w,
+            ./images/sky-medium800.jpg  800w,
+            ./images/sky-large1200.jpg 1200w
+          "
+        />
+        <!-- /></div> -->
+        <!-- WEATHER BOX -->
+        <aside class="weatherBox">
+          <h3 class="title">Weather Summary</h3>
+          <div class="label">
+            <p>Currently :</p>
+          </div>
+          <div>
+            <p><span id="currently">Sunny</span></p>
+          </div>
+          <div class="label">
+            <p>High :</p>
+          </div>
+          <div>
+            <p><span id="temp"></span>&deg;F</p>
+          </div>
+          <div class="label">
+            <p>Wind Chill :</p>
+          </div>
+          <div>
+            <p><span id="windchill"></span>&deg;F</p>
+          </div>
+          <div class="label">
+            <p>Humidity :</p>
+          </div>
+          <div>
+            <p><span id="humidity"></span>%</p>
+          </div>
+          <div class="label">
+            <p>Wind Speed :</p>
+          </div>
+          <div>
+            <p><span id="windSpeed">5</span> mph</p>
+          </div>
+        </aside>
+        <!------------FIVE DAY FORECAST------------>
+        <div class="fiveDayForecast">
+          <h3 id="forecast">5 Day Forecast</h3>
+          <table>
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <!-------EVENTS--------- -->
+        <article class="townEvents">
+          <h3 class="title">Town Events</h3>
+          <hr />
+          <div id="events"></div>
+        </article>
+
+        <article class="townArticle">
+          <img
+            src="./images/sharkfossil.jpg"
+            alt="vintage photo of Preston Idaho"
+            id="articleImg"
+            sizes="100vw"
+            srcset="
+              ./images/sharkfossil400.jpg   415w,
+              ./images/sharkfossil600.jpg   770w,
+              ./images/sharkfossil1000.jpg 1200w
+            "
+          />
+          <div>
+            <h2>New Shark Fossil Unearthed in Soda Springs</h2>
+            <h4>by Idaho Press Staff newsroom@idahopress.com</h4>
+          </div>
+
+          <p>
+            The Idaho Museum of Natural History on the Idaho State University
+            Pocatello campus recently received a new shark fossil from Monsanto,
+            according to a news release from Idaho State University. A spiral of
+            fossil shark teeth, Helicoprion, was exposed during mining
+            operations at the Monsanto mine in Soda Springs. Measuring over 8
+            inches in diameter, the fossil “adds a new story to the museum’s
+            growing collection of Idaho’s natural history,” said the release.
+            Monsanto Mine Operations Coordinator Cody Allen said, “... we are
+            excited to help preserve this rare and valuable piece of local
+            history. Alongside experts at the Idaho Natural History Museum and
+            Idaho State University, we will do our part to ensure these fossils
+            are protected and preserved. We hope this discovery will lead to
+            important learning opportunities for the community and even inspire
+            the next generation of scientists from Idaho.”
+            <span id="dots"> . . .</span>
+            <span id="more">
+              The Idaho Museum of Natural History is home to the largest
+              collection of Helicoprion sharks in the world. “Our studies on
+              Helicoprion show it was the largest predator on earth at the time,
+              nearly 270 million years ago,” said Leif Tapanila, museum
+              director. “Idaho is the best place on the planet to find these
+              amazing fossils. We’re very grateful to our partners in the region
+              for sharing their discoveries so we can make them available to the
+              public for many years to come.” The public will get a chance to
+              see the shark fossil in the fall when the museum’s “Buzzsaw Sharks
+              of Idaho” exhibit opens in October, said the release. The exhibit
+              has traveled for the past five years “sharing Idaho’s history with
+              over half a million people across the United States.” The Idaho
+              Museum of Natural History has been serving Idaho since 1934. To
+              learn more about the museum please visit imnh.isu.edu.</span
+            >
+          </p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+        </article>
+
+        <section class="contact clearfix">
+          <div class="contactText">
+            <h3>Weather Town</h3>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+          </div>
+
+          <div id="phone">
+            <p>
+              <img src="./images/phone-icon-white.png" alt="phone icon" />
+              208.999.9999 <br />
+
+              <img src="./images/email-icon-white.png" alt="email icon" />
+              <a href="https://weathertown@tws.com">weathertown@tws.com</a>
+            </p>
+          </div>
+
+          <div id="socialMedia">
+            <a href="https://www.facebook.com"
+              ><img src="./images/facebook.png" alt="facebook icon"
+            /></a>
+            <a href="https://pinterest.com"
+              ><img src="./images/pinterest.png" alt="pinterest icon"
+            /></a>
+            <a href="https://twitter.com"
+              ><img src="./images/twitter.png" alt="twitter icon"
+            /></a>
+            <a href="https://instagram.com"
+              ><img src="./images/instagram.png" alt="instagram icon"
+            /></a>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=30%20N%201st%20E%20C%20Preston%20Idaho%2083263+(Weather%20Town)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            ></iframe
+            ><a href="https://www.maps.ie/map-my-route/"></a>
+          </div>
+          <br />
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p>
+        &copy;2019 Weather Town | Shan'l Parish |
+        <span id="displayDate"></span>
+      </p>
+    </footer>
+    <script src="js/weatherapi-ss.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/readmore.js"></script>
+    <script src="js/events-ss.js"></script>
+    <script src="js/forecastapi-ss.js"></script>
+
+    <!-- <script src="js/windchill.js"></script> -->
+  </body>
+</html>

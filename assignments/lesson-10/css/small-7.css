@@ -283,7 +283,7 @@ div#events {
   padding: 1% 2%;
   max-width: 35rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px 1px #808080;
+  box-shadow: 5px 5px 10px 1px #808080;
 }
 form legend {
   text-align: left;
@@ -541,7 +541,7 @@ figure img {
   line-height: 1.5em;
 }
 .towncard hr {
-  background-color: #716f6f;
+  background-color: #808080;
   width: 90%;
   margin: 0 auto;
   opacity: 0.5;

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fish Haven, Idaho Weather Page</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Fish Haven City local weather page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/small.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/medium.css"
+      media="screen and (min-width:600px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/large.css"
+      media="screen and (min-width:960px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header clearfix">
+      <div class="header-left">
+        <figure class="logo">
+          <img
+            src="./images/logo0.png"
+            alt="town logo"
+            sizes="25vw"
+            srcset="
+              ./images/logo0.png  400w,
+              ./images/logo2.png  800w,
+              ./images/logo3.png 1200w
+            "
+          />
+        </figure>
+      </div>
+      <div class="header-right">
+        <h1>Weather Town</h1>
+        <h3><em>weather. . .the neighborly way</em></h3>
+      </div>
+    </header>
+    <header class="headerNav">
+      <div>
+        <!-- Collapsible content -->
+        <nav class="navbar">
+          <!-- hamburger menu symbol -->
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="primaryNav hide">
+            <li>
+              <a href="index.html" class="nav-link">Home </a>
+            </li>
+            <li>
+              <a href="preston.html" class="nav-link">Preston</a>
+            </li>
+            <li class="active">
+              <a href="fishhaven.html" class="nav-link">Fish Haven</a>
+            </li>
+            <li>
+              <a href="sodasprings.html" class="nav-link">Soda Springs</a>
+            </li>
+            <li>
+              <a href="stormcenter.html" class="nav-link">Storm Center</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main>
+        <h2>Fish Haven</h2>
+        <!-- <div class="herodiv"> -->
+        <img
+          src="./images/sky-original.jpeg"
+          alt="sky landscape image"
+          class="hero"
+          sizes="100vw"
+          srcset="
+            ./images/sky-small400.jpg   400w,
+            ./images/sky-medium800.jpg  800w,
+            ./images/sky-large1200.jpg 1200w
+          "
+        />
+        <!-- /></div> -->
+        <!-- WEATHER BOX -->
+        <aside class="weatherBox">
+          <h3 class="title">Weather Summary</h3>
+          <div class="label">
+            <p>Currently :</p>
+          </div>
+          <div>
+            <p><span id="currently">Sunny</span></p>
+          </div>
+          <div class="label">
+            <p>High :</p>
+          </div>
+          <div>
+            <p><span id="temp"></span>&deg;F</p>
+          </div>
+          <div class="label">
+            <p>Wind Chill :</p>
+          </div>
+          <div>
+            <p><span id="windchill"></span>&deg;F</p>
+          </div>
+          <div class="label">
+            <p>Humidity :</p>
+          </div>
+          <div>
+            <p><span id="humidity"></span>%</p>
+          </div>
+          <div class="label">
+            <p>Wind Speed :</p>
+          </div>
+          <div>
+            <p><span id="windSpeed">5</span> mph</p>
+          </div>
+        </aside>
+
+        <!------------FIVE DAY FORECAST------------>
+        <div class="fiveDayForecast">
+          <h3 id="forecast">5 Day Forecast</h3>
+          <table>
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <!-------EVENTS--------- -->
+        <article class="townEvents">
+          <h3 class="title">Town Events</h3>
+          <hr />
+          <div id="events"></div>
+        </article>
+
+        <article class="townArticle">
+          <img
+            src="/images/fishhaven.jpg"
+            alt="Mountain landscape of Fish Haven, Idaho"
+            id="articleImg"
+            sizes="100vw"
+            srcset="
+              /images/fishhaven400.jpg    415w,
+              ./images/fishhaven600.jpg   770w,
+              ./images/fishhaven1000.jpg 1200w
+            "
+          />
+          <div>
+            <h2>Little Fish Haven, Idaho is Paradise for Residents</h2>
+            <h4>by Kurt Firedemann, Idaho State Journal</h4>
+          </div>
+
+          <p>
+            FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who
+            drive by recognize the raw beauty of a place ringed by high desert
+            mountains and bordered by the shores of a vast natural lake. In
+            winter the hills outside this small paradise echo with the sharp
+            whine of snow machines and in the summer thousands of tourists ply
+            the lake's bright blue waters with water skis or fishing poles. But
+            they don't live there. It's different living in Fish Haven. The
+            little town sits just on the Idaho side of U.S. Highway 89 tucked in
+            between Bear Lake's west side and the mountains. It's not
+            technically a city or a town, it's really nothing more than the
+            proverbial wide spot in the road. But people call it a town even
+            though there isn't a city council, just the Bear Lake County
+            Commission that oversees development there. Only 50 to 100 people
+            call it home, depending on the weather. Vic Tilt, co-owner of
+            Gladys' Place, is one of the few year-around residents and said the
+            population drops quickly when things get cold. The winter evacuation
+            isn't much of a worry for Tilt, 60, because his store is the only
+            one around. The nearest other store is in Montpelier, about 45
+            minutes away. Gladys' Place is also only a few minutes from the Utah
+            border and has become quite a lottery spot. The little store is the
+            third- and fourth-biggest lottery ticket seller in Idaho, selling
+            about 500,000 tickets a year. "We've got a whole mall in 1,000
+            square feet," Tilt said. Because it is the only business in Fish
+            Haven, Gladys' Place sells it all — liquor, groceries, videos,
+            tourist gifts and some of the best deli sandwiches around — and also
+            serves as post office, Gladys Tilt said. Yep, you guessed it,
+            Gladys' Place is 58-year-old Gladys Tilt's place. The Tilts opened
+            the little store in April 1994 and have been steeped in tourist fun
+            and local tradition ever since. Before 1994 the couple had been
+            working for a corporation in Salt Lake City. On one of their
+            traditional summer trips they passed through Fish Haven and fell in
+            love with the town and Bear Lake. The couple decided to move their
+            fifth-wheel camper trailer to the area, bought a piece of ground and
+            parked it. That wasn't enough.
+            <span id="dots"> . . .</span
+            ><span id="more">
+              "We were spending almost every bit of free time we had up here,"
+              Gladys said. "We heard that the store might be sold and so we
+              decided to go for it." They gave up everything in the city — their
+              jobs, home, and moved to Fish Haven in just a few months. "We sold
+              our house for cash and moved," Vic said. "'We haven't looked back.
+              I was born in Salt Lake City, but now you couldn't drag me back."
+              Since their move, Fish Haven has begun to grow up around them. It
+              was already a small tourist spot, but since the introduction of
+              Bear Lake West, a cabin development south of Fish Haven, things
+              have really begun to grow. It's the reason Ruth and Scott Stokes
+              are now spending more of their time in Fish Haven. The Stokeses
+              have a home in Ogden but are considering making the town along
+              Bear Lake's western shore their permanent home. The couple
+              discovered the spot because Scott Stokes is a contractor and began
+              helping a fellow builder put together cabins in Bear Lake West.
+              The Stokeses fell in love with the people and the atmosphere in
+              Fish Haven. "It's just a wonderful place to be," Ruth Stokes said.
+              "I feel at peace here. Every time we drive up I'm just in awe." It
+              was good enough for Scott Stokes and his company, Scott
+              Construction, to begin building cabins without his friend. "It's a
+              great place to live," he said with a smile. "I just want to help
+              people live here." The Bear Lake Regional Commission wants to draw
+              people to Fish Haven as well, said Judy Holbrook, regional
+              commission executive assistant. The commission is working to
+              promote the area and the entire Bear Lake valley, which includes
+              towns as far north as Montpelier. "'We're a gateway to
+              Yellowstone," she said. "A lot of people drive through here and we
+              want to try and capture that tourist traffic." But the problem
+              now, is not drawing people to it, Holbrook said, but controlling
+              the growth. "We have more than 400 homes in two subdivisions
+              around Bear Lake," she said. "We need to maintain our quality of
+              life and at the same time encourage growth." But for Vic and
+              Gladys Tilt, more or fewer people in Fish Haven isn't really a
+              concern. They're content right now. "It's the way it is and the
+              way it's always going to be right now," Vic said. "It will be here
+              a long time after we're gone."
+            </span>
+          </p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+        </article>
+
+        <section class="contact clearfix">
+          <div class="contactText">
+            <h3>Weather Town</h3>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+          </div>
+
+          <div id="phone">
+            <p>
+              <img src="./images/phone-icon-white.png" alt="phone icon" />
+              208.999.9999 <br />
+
+              <img src="./images/email-icon-white.png" alt="email icon" />
+              <a href="https://weathertown@tws.com">weathertown@tws.com</a>
+            </p>
+          </div>
+
+          <div id="socialMedia">
+            <a href="https://www.facebook.com"
+              ><img src="./images/facebook.png" alt="facebook icon"
+            /></a>
+            <a href="https://pinterest.com"
+              ><img src="./images/pinterest.png" alt="pinterest icon"
+            /></a>
+            <a href="https://twitter.com"
+              ><img src="./images/twitter.png" alt="twitter icon"
+            /></a>
+            <a href="https://instagram.com"
+              ><img src="./images/instagram.png" alt="instagram icon"
+            /></a>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=30%20N%201st%20E%20C%20Preston%20Idaho%2083263+(Weather%20Town)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            ></iframe
+            ><a href="https://www.maps.ie/map-my-route/"></a>
+          </div>
+          <br />
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p>
+        &copy;2019 Weather Town | Shan'l Parish |
+        <span id="displayDate"></span>
+      </p>
+    </footer>
+    <script src="js/weatherapi-fh.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/readmore.js"></script>
+    <script src="js/events-fh.js"></script>
+    <script src="js/forecastapi-fh.js"></script>
+
+    <!-- <script src="js/windchill.js"></script> -->
+  </body>
+</html>
