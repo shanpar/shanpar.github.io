@@ -2,7 +2,7 @@
 /* 64em is also 1028 when basefont is 16px */
 
 main {
-  max-width: 64rem;
+  max-width: 66rem;
   margin: auto;
 }
 
