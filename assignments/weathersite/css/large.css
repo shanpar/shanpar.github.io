@@ -1,8 +1,7 @@
 /* Media Query for large screens */
 /* 64em is also 1028 when basefont is 16px */
 
-main,
-footer {
+main {
   max-width: 64rem;
   margin: auto;
 }
@@ -141,6 +140,9 @@ article h2 {
 form input.submitBtn {
   font-size: 1.2rem;
 }
+.form {
+  margin-bottom: 30px;
+}
 
 /* -----------CONTACT------------- */
 section.contact {
@@ -177,10 +179,12 @@ section.contact iframe {
 #socialMedia img {
   width: 35px;
 }
-/* ----------FOOTER----------- */
-footer p {
-  font-size: 14px;
-}
+/* <-----------GALLERY--------------- --> */
 .card:hover {
   box-shadow: 0 0 10px #333;
+}
+/* <-- --------FOOTER----------- --> */
+
+footer p {
+  font-size: 14px;
 }

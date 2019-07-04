@@ -1,1 +1,0 @@
-openweathermap key: 25f95d7b36b3ee23a983accb3604e8ae

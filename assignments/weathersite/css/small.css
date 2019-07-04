@@ -58,8 +58,6 @@ header h3 {
   font-size: 1rem;
 }
 header figure img {
-  /* float: left; */
-  /* margin: 0 20px;*/
   width: 50px;
 }
 .wrapper {
@@ -167,6 +165,7 @@ main img.hero {
   justify-items: start;
   column-gap: 1em;
   row-gap: 0.25em;
+  border-radius: 3px;
 }
 .label {
   justify-self: end;
@@ -199,22 +198,24 @@ table {
   width: 75%;
   border-collapse: collapse;
   margin: 10px auto;
+  border: 2px solid #404040;
 }
 #forecast {
-  padding: 10px;
+  padding: 10px 5px;
 }
 table th {
   color: #e9e9e9;
   background: #eb7903;
   opacity: 0.85;
+  border-bottom: 2px solid #404040;
 }
 table td,
 th {
-  border: 2px solid #404040;
-  padding: 10px;
+  border-left: 2px solid #404040;
+  padding: 7px 10px;
 }
 table td img {
-  width: 40px;
+  width: 60px;
 }
 /* ------------------EVENTS---------------------- */
 
@@ -239,7 +240,7 @@ div#events {
 /*-------------------- NEWS ARTICLE------------------- */
 .townArticle {
   text-align: left;
-  margin: 3rem auto;
+  margin: 2rem auto;
   background-color: #e9e9e9;
   padding: 15px;
   width: 100%;
@@ -273,6 +274,7 @@ div#events {
   width: 100%;
   margin: 10px auto;
   box-shadow: 0 0 5px #000;
+  border-radius: 3px;
 }
 /* -----------FORM-------------- */
 
@@ -386,7 +388,7 @@ form label.top input:required:valid {
 section.contact {
   background-color: #03808f;
   color: #e9e9e9;
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
   padding: 20px;
   text-align: left;
   display: grid;
@@ -444,7 +446,7 @@ footer {
   color: #e9e9e9;
   font-size: 1em;
   text-align: center;
-  margin: 0 auto;
+  margin-top: 2rem;
   height: 50px;
   padding: 20px;
   width: 100%;
@@ -476,7 +478,7 @@ figure {
   border: 1px solid #d3d3d3;
   box-shadow: 0px 1px 3px #555;
   background-color: white;
-  border-radius: 0.25rem;
+  border-radius: 3px;
   align-content: center;
 }
 .content {
@@ -533,9 +535,11 @@ figure img {
   order: 1;
   padding: 8px;
 }
-.towncard figure img {
+.towncard img {
+  box-shadow: 0 0 5px #000;
   border-radius: 3px;
 }
+
 .towncard article {
   text-align: center;
   color: #716f6f;
