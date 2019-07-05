@@ -53,6 +53,9 @@ article p {
 /* -------TOWN CARDS------- */
 
 /* -------FOOTER---------- */
+.contactText p {
+  font-size: 1em;
+}
 footer p {
   font-size: 12px;
 }

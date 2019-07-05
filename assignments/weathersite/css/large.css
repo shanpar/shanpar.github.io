@@ -171,11 +171,8 @@ footer section.contact iframe {
   height: 300px;
 }
 
-.contactText {
-  text-align: left;
-  font-size: 1.2em;
-  margin-left: 2%;
-  width: 40%;
+.contactText p {
+  font-size: 1.1em;
 }
 #phone {
   padding-left: 2%;

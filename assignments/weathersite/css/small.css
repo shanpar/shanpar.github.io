@@ -405,6 +405,9 @@ footer section.contact iframe {
   margin: 0;
   overflow: hidden;
 }
+#contactInfoBox {
+  margin-bottom: 15px;
+}
 #phone {
   display: block;
   margin-top: 20px;
@@ -425,11 +428,12 @@ footer section.contact iframe {
   /* width: 50%; */
   /* margin: 0 auto; */
   text-align: left;
-  font-size: 0.9em;
-  margin-left: 2%;
+
+  /* margin-left: 2%; */
 }
 .contactText p {
   line-height: 1.3em;
+  font-size: 0.9em;
 }
 #socialMedia {
   padding-top: 10px;
