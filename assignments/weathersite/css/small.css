@@ -284,6 +284,7 @@ div#events {
   max-width: 35rem;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 1px #808080;
+  margin: 0 4%;
 }
 form legend {
   text-align: left;
@@ -483,6 +484,7 @@ figure {
   background-color: white;
   border-radius: 3px;
   align-content: center;
+  margin: 0 4%;
 }
 .content {
   padding: 0.5rem 0.75rem;
@@ -497,7 +499,7 @@ figure img {
 
 /* -------------TOWN STAT CARDS------------- */
 .towngallery {
-  margin: 25px 0;
+  margin: 25px 4%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);
@@ -537,7 +539,7 @@ figure img {
   flex-direction: column;
   order: 1;
   padding: 8px;
-  margin-bottom: 5px;
+  margin: 0 2% 5px 2%;
 }
 .towncard img {
   box-shadow: 0 0 5px #000;
