@@ -28,8 +28,8 @@
   <body>
     <header class="header clearfix">
       <div class="header-left">
-        <a href="index.html"
-          ><figure class="logo">
+        <a href="index.html">
+          <figure class="logo">
             <img
               src="./images/logo0.png"
               alt="town logo"
@@ -39,8 +39,9 @@
                 ./images/logo2.png  800w,
                 ./images/logo3.png 1200w
               "
-            /></figure
-        ></a>
+            />
+          </figure>
+        </a>
       </div>
       <div class="header-right">
         <h1>Weather Town</h1>
@@ -116,8 +117,11 @@
             </div>
           </a>
         </div>
-
-        <section class="contact clearfix">
+      </main>
+    </div>
+    <footer>
+      <section class="contact clearfix">
+        <div id="contactInfoBox">
           <div class="contactText">
             <h3>Weather Town</h3>
             <p>30 N 1st E</p>
@@ -148,27 +152,25 @@
               ><img src="./images/instagram.png" alt="instagram icon"
             /></a>
           </div>
+        </div>
 
-          <div class="map">
-            <iframe
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=30%20N%201st%20E%20C%20Preston%20Idaho%2083263+(Weather%20Town)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-            ></iframe
-            ><a href="https://www.maps.ie/map-my-route/"></a>
-          </div>
-          <br />
-        </section>
-      </main>
-    </div>
-    <footer>
-      <p>
-        &copy;2019 Weather Town | Shan'l Parish |
-        <span id="displayDate"></span>
-      </p>
+        <div class="map">
+          <iframe
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=30%20N%201st%20E%20C%20Preston%20Idaho%2083263+(Weather%20Town)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+          ></iframe
+          ><a href="https://www.maps.ie/map-my-route/"></a>
+        </div>
+        <br />
+      </section>
+      <section class="attributions">
+        <p>
+          &copy;2019 Weather Town | Shan'l Parish |
+          <span id="displayDate"></span>
+        </p>
+      </section>
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/readmore.js"></script>
-
     <script src="js/cityinfo.js"></script>
   </body>
 </html>

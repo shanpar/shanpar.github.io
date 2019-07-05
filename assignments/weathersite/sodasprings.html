@@ -81,14 +81,14 @@
         <h2>Soda Springs</h2>
         <!-- <div class="herodiv"> -->
         <img
-          src="./images/sky-original.jpeg"
+          src="./images/sodasprings-hero.jpg"
           alt="sky landscape image"
           class="hero"
           sizes="100vw"
           srcset="
-            ./images/sky-small400.jpg   400w,
-            ./images/sky-medium800.jpg  800w,
-            ./images/sky-large1200.jpg 1200w
+            ./images/sodasprings-hero400.jpg   400w,
+            ./images/sodasprings-hero800.jpg   800w,
+            ./images/sodasprings-hero1200.jpg 1200w
           "
         />
         <!-- /></div> -->
@@ -185,15 +185,18 @@
           </p>
           <button onclick="myFunction()" id="myBtn">Read more</button>
         </article>
-
-        <section class="contact clearfix">
+      </main>
+    </div>
+    <footer>
+      <section class="contact clearfix">
+        <div id="contactInfoBox">
           <div class="contactText">
             <h3>Weather Town</h3>
             <p>30 N 1st E</p>
             <p>Preston, ID 83263</p>
           </div>
 
-          <div id="phone">
+          <div id="phone" class="contactText">
             <p>
               <img src="./images/phone-icon-white.png" alt="phone icon" />
               208.999.9999 <br />
@@ -217,22 +220,22 @@
               ><img src="./images/instagram.png" alt="instagram icon"
             /></a>
           </div>
+        </div>
 
-          <div class="map">
-            <iframe
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=30%20N%201st%20E%20C%20Preston%20Idaho%2083263+(Weather%20Town)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-            ></iframe
-            ><a href="https://www.maps.ie/map-my-route/"></a>
-          </div>
-          <br />
-        </section>
-      </main>
-    </div>
-    <footer>
-      <p>
-        &copy;2019 Weather Town | Shan'l Parish |
-        <span id="displayDate"></span>
-      </p>
+        <div class="map">
+          <iframe
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=30%20N%201st%20E%20C%20Preston%20Idaho%2083263+(Weather%20Town)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+          ></iframe
+          ><a href="https://www.maps.ie/map-my-route/"></a>
+        </div>
+        <br />
+      </section>
+      <section class="attributions">
+        <p>
+          &copy;2019 Weather Town | Shan'l Parish |
+          <span id="displayDate"></span>
+        </p>
+      </section>
     </footer>
     <script src="js/weatherapi-ss.js"></script>
     <script src="js/currentdate.js"></script>

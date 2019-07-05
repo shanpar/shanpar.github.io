@@ -20,9 +20,11 @@ nav {
   margin-top: 20px;
 }
 /* --------MAIN-------------- */
+main {
+  width: 85%;
+}
 main h2 {
   margin-top: 20px;
-  text-align: left;
   font-size: 28px;
   padding: 10px 0;
 }
