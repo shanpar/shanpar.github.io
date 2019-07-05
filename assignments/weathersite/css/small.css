@@ -537,6 +537,7 @@ figure img {
   flex-direction: column;
   order: 1;
   padding: 8px;
+  margin-bottom: 5px;
 }
 .towncard img {
   box-shadow: 0 0 5px #000;
