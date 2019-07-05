@@ -213,8 +213,8 @@ th {
   border-left: 2px solid #404040;
   padding: 7px 10px;
 }
-table td img {
-  width: 60px;
+table tbody td img {
+  width: 80px;
 }
 /* ------------------EVENTS---------------------- */
 
