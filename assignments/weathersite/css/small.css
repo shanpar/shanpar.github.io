@@ -447,16 +447,15 @@ footer section.contact iframe {
 section.attributions {
   background-color: #404040;
   color: #e9e9e9;
-  font-size: 1rem;
   text-align: center;
   height: 50px;
   padding: 20px;
   width: 100%;
 }
-section.attributions p {
+footer section.attributions p {
   text-align: center;
   margin-top: 0;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 section.attributions a {
   /* text-decoration: none; */
