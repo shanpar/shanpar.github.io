@@ -142,7 +142,7 @@ article h2 {
   margin: 1% 1% 1% 2%;
 }
 
-/* -----------FORM--------------------- */
+/* -----------FORM--------------- */
 form input.submitBtn {
   font-size: 1.2rem;
 }
@@ -156,22 +156,27 @@ footer section.contact {
   grid-template-rows: auto;
   margin-top: 2%;
   height: 20rem;
+  position: relative;
 }
 footer #contactInfoBox {
   margin: 20px 0 0 100px;
-  width: 50%;
+  width: 40%;
 }
 footer section.contact div.map {
   width: 50%;
   float: right;
-  margin-top: -160px;
+  position: relative;
+  
+  margin-top: -170px;
   margin-right: 100px;
 }
 
 footer section.contact iframe {
-  height: 270px;
+  height: 250px;
+  width: 100%
+  /* float: right; */
+  position: relative;
 }
-
 .contactText p {
   font-size: 1.1em;
 }
