@@ -108,7 +108,7 @@ div#events ul {
   font-size: 24px;
   padding-top: 1rem;
 }
-/* ----------CITY DATA BOXES------------------ */
+/* ----------CITY DATA BOXES---------- */
 .towngallery {
   margin: 40px 0 10px 0;
 }
@@ -125,7 +125,7 @@ div#events ul {
   line-height: 1.5em;
 }
 
-/* -------------ARTICLE------------------------ */
+/* -------------ARTICLE----------------- */
 .townArticle {
   padding: 15px;
 }
@@ -142,7 +142,7 @@ article h2 {
   margin: 1% 1% 1% 2%;
 }
 
-/* -----------FORM--------------- */
+/* -----------FORM--------------------- */
 form input.submitBtn {
   font-size: 1.2rem;
 }
@@ -164,7 +164,7 @@ footer #contactInfoBox {
 footer section.contact div.map {
   width: 50%;
   float: right;
-  margin-top: -180px;
+  margin-top: -160px;
   margin-right: 100px;
 }
 
