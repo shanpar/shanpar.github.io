@@ -14,7 +14,7 @@ function showData(jsonObj) {
   var eventData = jsonObj["temples"];
 
   for (var i = 0; i < eventData.length; i++) {
-    if (eventData[i].id == 519188) {
+    if (eventData[i].city == 519188) {
       var myul = document.createElement("ul");
       var townId = document.getE;
       var dates = eventData[i].closures;

@@ -1,9 +1,9 @@
-var div = document.getElementById("closures");
+var div = document.getElementById("closures2");
 
-var requestURL =
+var requestURL2 =
   "https://raw.githubusercontent.com/shanpar/shanpar.github.io/master/assignments/lesson-12/temple/js/temple.list2.json";
 var request = new XMLHttpRequest();
-request.open("GET", requestURL);
+request.open("GET", requestURL2);
 request.responseType = "json";
 request.send();
 request.onload = function() {
@@ -14,9 +14,9 @@ function showData(jsonObj) {
   var eventData = jsonObj["temples"];
 
   for (var i = 0; i < eventData.length; i++) {
-    if (eventData[i].id == 519188) {
+    if (eventData[i].id == 1270260) {
       var myul = document.createElement("ul");
-      var townId = document.getE;
+
       var dates = eventData[i].closures;
       for (var k = 0; k < dates.length; k++) {
         var myli = document.createElement("li");
