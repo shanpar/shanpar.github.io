@@ -14,13 +14,13 @@ function showData(jsonObj) {
   var eventData = jsonObj["templeClosures"];
 
   for (var i = 0; i < eventData.length; i++) {
-    if (eventData[i].id == 707860) {
+    if (eventData[i].id == 519188) {
       var myul = document.createElement("ul");
 
-      var events = eventData[i].dates;
+      var dates = eventData[i].dates;
       for (var k = 0; k < dates.length; k++) {
         var myli = document.createElement("li");
-        myli.textContent = events[k];
+        myli.textContent = dates[k];
         myul.appendChild(myli);
       }
 
