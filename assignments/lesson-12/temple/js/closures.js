@@ -18,7 +18,7 @@ function showData(jsonObj) {
       var myul = document.createElement("ul");
 
       var events = eventData[i].dates;
-      for (var k = 0; k < events.length; k++) {
+      for (var k = 0; k < dates.length; k++) {
         var myli = document.createElement("li");
         myli.textContent = events[k];
         myul.appendChild(myli);
