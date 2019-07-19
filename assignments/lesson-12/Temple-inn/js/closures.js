@@ -1,6 +1,7 @@
 var div = document.getElementById("closures");
 
-var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+var requestURL =
+  "https://github.com/shanpar/shanpar.github.io/blob/master/assignments/lesson-12/temple/js/temple.list2.json";
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
