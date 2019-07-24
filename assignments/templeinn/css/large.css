@@ -168,9 +168,8 @@ section#services {
   justify-content: flex-start;
   background-color: #c6c5b9;
   max-width: 33.3%;
-  /* padding: 0 0 5% 10%; */
   line-height: 1.3rem;
-  height: 650px;
+  height: 700px;
 }
 
 section#services h1,
@@ -193,7 +192,7 @@ section#missionary {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 650px;
+  height: 700px;
 }
 section#missionary img,
 section#reception img,
@@ -206,13 +205,13 @@ section#reception {
   flex-direction: column;
   justify-content: flex-start;
   line-height: 1.3rem;
-  height: 650px;
+  height: 700px;
 }
 button#receptionBtn {
   margin: 10% auto;
 }
 button#missionaryBtn {
-  margin: 16% auto;
+  margin: 10% auto;
 }
 /* -------MISSIONARY PAGE----------- */
 h1#mission {
