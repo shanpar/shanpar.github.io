@@ -1,0 +1,64 @@
+{
+  "temples": [
+    {
+      "id": 707860,
+      "name": "Kona",
+      "state": "Hawaii",
+      "country": "US",
+
+      "closures": [
+        "Monday, 23 September 2019 - Monday, 7 October 2019",
+        "Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019",
+        "Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019"
+      ]
+    },
+    {
+      "id": 519188,
+      "name": "Kansas City",
+      "state": "Missouri",
+      "country": "US",
+
+      "closures": [
+        "Monday, 22 July 2019 - Monday, 5 August 2019",
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 Limited Hours",
+        "Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019"
+      ]
+    },
+    {
+      "id": 1270260,
+      "name": "Fort Collins",
+      "state": "Colorado",
+      "country": "US",
+
+      "closures": [
+        "Monday, 12 August 2019 - Monday, 26 August 2019",
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 Limited Hours",
+        "Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019",
+        "Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019 Limited Hours"
+      ]
+    },
+    {
+      "id": 708546,
+      "name": "Boston",
+      "state": "Massachusetts",
+      "country": "US",
+
+      "closures": [
+        "Monday, 8 July 2019 - Monday, 22 July 2019",
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019",
+        "Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019",
+        "Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019"
+      ]
+    }
+  ]
+}

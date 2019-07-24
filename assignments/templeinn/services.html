@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Services | Temple Inn & Suites | 240-999-8888</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Services & Amenities Page" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/temple-icon.png" type="image/png" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="./css/small.css" />
+  <link rel="stylesheet" type="text/css" href="./css/medium.css" media="screen and (min-width:640px)" />
+  <link rel="stylesheet" type="text/css" href="./css/large.css" media="screen and (min-width:1024px)" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+ 
+</head>
+
+<body>
+  <header class="header clearfix">
+
+    <div class="container">
+      <!-- -----------LOGO--------------- -->
+      <div class="header-left">
+        <a href="index2.html">
+          <figure class="logo">
+            <img src="./images/templelogo.jpg" alt="temple inn & suites logo" sizes="25vw" srcset="
+                    ./images/templelogo-320.jpg   320w,
+                    ./images/templelogo-640.jpg   640w,
+                    ./images/templelogo-1028.jpg 1024w
+                  " />
+          </figure>
+        </a>
+      </div>
+      <!-- -----------CONTACT INFO---------- -->
+      <div class="header-right">
+        <h2 class="font2">
+          <span>4800 Montgomery Ln #300</br>
+            BETHESDA,&nbsp;MD&nbsp;20814<br>
+            240-999-8888</span>
+        </h2>
+      </div>
+      <!-- -------RESERVATIONS BUTTON------------ -->
+      <button type="button" id="bookNow" onclick="location.href='reservation.html'">Make Reservation</button>
+    </div>
+    <!-- ------TAGLINE--------- -->
+
+    <div id="tagline">
+      <h3>
+        Providing Overnight Accomodations & Services for Temple Patrons
+      </h3>
+    </div>
+
+  </header>
+  <!-- ------NAVBAR----------- -->
+  <header class="headerNav">
+    <div>
+      <!-- Collapsible content -->
+      <nav class="navbar">
+        <!-- hamburger menu symbol -->
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="primaryNav hide">
+          <li>
+            <a href="index2.html" class="nav-link">Home </a>
+          </li>
+          <li>
+            <a href="reservation.html" class="nav-link">Reservations</a>
+          </li>
+          <li>
+            <a href="temples.html" class="nav-link">Temples</a>
+          </li>
+
+         
+          <li>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+          </li>
+          <li class="active parent">
+            <a href="services.html" class="nav-link">Services ></a>
+          
+            <ul class="child">
+              <li>
+                <a class="nav-link" href="missionary.html">Missionaries</a>
+              </li>
+              <li>
+                <a class="nav-link" href="reception.html">Weddings</a>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main>
+      <!-- -----HERO IMAGE----------------- -->
+      <img src="./images/services-hero.jpg" alt="hotel room with window image" class="hero" sizes="100vw" srcset="
+                ./images/services-hero320.jpg   320w,
+                ./images/services-hero640.jpg   640w,
+                ./images/services-hero1024.jpg 1024w
+              " />
+<div class="servicesContainer">
+      <!--------------- SERVICES INFORMATION ----------------->
+      <section id="services">
+        <img src="./images/services.jpg" alt="Child playing with blocks"
+        sizes="100vw" srcset="
+                ./images/services320.jpg   320w,
+                ./images/services640.jpg   640w,
+                ./images/services1024.jpg 1024w
+              " />
+          
+        <h1>Services & Amenities</h1>
+        <div class="bulletList">
+        <ul>
+          <li>Temple history themed reception and sitting area</li>
+          <li>Family search center with family history consultation and family ordinance card service</li>
+          <li>Free access to changing rooms and bathroom facilities</li>
+        <li>Playroom and low-cost, short-term babysitting services</li>
+      <li>Breakfast</li>
+      <li>Exercise/workout room</li>
+      <li>Indoor Pool</li>
+      <li>WiFi high-speed internet access</li>
+      <li>Temple Shuttle</li>
+
+      </ul>
+      </div>
+      </section>
+      <!-- -------------AMENITIES-------------------------- -->
+     <section id="missionary">
+       <img src="./images/missionary.jpg" alt="Senior Missionaries standing in front of the Salt Lake City Temple"
+      sizes="100vw" srcset="
+      ./images/missionary320.jpg 320w,
+      ./images/missionary640.jpg 640w,
+      ./images/missionary1024.jpg 1024w
+      " />
+       <h1>Full-time Missionary Lodging</h1>
+      <div class="bulletList">
+         <ul><li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+      <li>Family search center</li>
+      </ul>
+      </div>
+      <button type="button" id="missionaryBtn" onclick="location.href='missionary.html'">Learn More</button>
+      
+     </section>
+     <!-- -------------RECEPTION--------------------------- -->
+     <section id="reception">
+       <img src="./images/reception.jpg" alt="Married couple making a heart with hands together"
+        sizes="100vw" srcset="
+                ./images/reception320.jpg   320w,
+                ./images/reception640.jpg   640w,
+                ./images/reception1024.jpg 1024w
+              " />
+       <h1>Reception Hall Reservations</h1>
+      <div class="bulletList"> <ul>
+         <li>Wedding reception hall that can easily be customized </li>
+         <li>A simple catering menu</li>  
+         <li>Kitchen access for food preparation and serving</li>
+       </ul>
+      </div>
+      <button type="button" id="receptionBtn" onclick="location.href='reception.html'">Learn More</button>
+     </section>
+</div>
+
+    </main>
+  </div>
+  <!-- ---------------FOOTER-------------------------------- -->
+  <footer>
+    <section class="contact clearfix">
+      <div id="contactInfoBox">
+
+        <div id="socialMedia">
+          <a href="https://www.facebook.com" aria-label="facebook"><img src="./images/facebook.png"
+              alt="facebook icon" /></a>
+          <a href="https://pinterest.com" aria-label="pinterest"><img src="./images/pinterest.png"
+              alt="pinterest icon" /></a>
+          <a href="https://twitter.com" aria-label="twitter"><img src="./images/twitter.png" alt="twitter icon" /></a>
+        </div>
+
+        <ul id="secondaryNav">
+          <li class="secNav"><a class="link1" href="index2.html">Home</a></li>
+          <li class="secNav"><a href="reservation.html">Reservation</a></li>
+          <li class="secNav"><a href="temples.html">Temples</a></li>
+          <li class="secNav"><a href="contact.html">Contact Us</a></li>
+          <li class="secNav"><a href="services.html">Services</a></li>
+          <li class="secNav"><a href="missionary.html">Missionaries</a></li>
+          <li class="secNav"><a href="reception.html">Weddings</a></li>
+        </ul>
+
+        <div class="attributions">
+          <p>
+            &copy;2019 Temple Inn & Suites | Designed by Shan'l Parish |&nbsp;<a href="resources.html">Resources</a>
+          </p>
+        </div>
+    </section>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+  <script src="js/cityinfo.js"></script>
+
+</body>
+
+</html>

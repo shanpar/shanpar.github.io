@@ -1,0 +1,282 @@
+/* ------HEADER------------ */
+
+.header-right {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.header-right h2.font2 {
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.2em;
+}
+div#tagline h3 {
+  font-size: 1.3rem;
+}
+.container button#bookNow {
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  right: 5%;
+  top: 69%;
+  box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2.5px;
+}
+.container #bookNow:hover {
+  background-color: #f59a39;
+  transform: translateY(-3px);
+  border: 2px solid #e18e35;
+}
+
+/* --------NAVIGATION-------- */
+.navbar button {
+  font-size: 1.3rem;
+}
+nav li {
+  font-size: 1.2rem;
+}
+nav {
+  margin-top: 20px;
+}
+/* --------MAIN-------------- */
+main {
+  width: 100%;
+}
+main h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  padding: 10px 0;
+}
+/* --------INTRO TEMPLE INN-------------- */
+section#intro {
+  display: grid;
+  height: auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  margin-top: 3%;
+}
+div.imageContainer {
+  display: flex;
+  justify-content: normal;
+  /* align-items: center; */
+}
+img.hotel {
+  /* width: 30%; */
+  /* display: block; */
+  height: 450px;
+  align-self: flex-start;
+  object-fit: cover;
+}
+div.templeInnIntro {
+}
+section#intro h1 {
+}
+section#intro p {
+  /* text-align: left; */
+  padding: 2% 4% 4% 4%;
+}
+
+/* ------------TEMPLE CARDS---------- */
+div#templeCol {
+  margin: 2% 4% 0 0;
+  column-count: 2;
+  column-gap: 40px;
+  /* margin-left: 5%; */
+  /* column-width: 100px; */
+}
+div.card div#templeCol.content {
+  padding: 2% 4%;
+  background-color: #e7e6db;
+  border-radius: 10px;
+  margin: 2%;
+}
+/* -----WEDDING RECEPTION CENTER PAGE----- */
+section#receptionContainer1 {
+  display: grid;
+  height: auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  margin-top: 3%;
+}
+
+img.veil {
+  /* width: 30%; */
+  /* display: block; */
+  height: 300px;
+  align-self: flex-start;
+  object-fit: cover;
+}
+
+section#receptionContainer1 p {
+  /* text-align: left; */
+  padding: 2% 4% 4% 4%;
+}
+
+section#receptionContainer1 h1,
+section#receptionContainer2 h1 {
+  margin-top: 4%;
+  background-color: transparent;
+}
+section#receptionContainer2 {
+  display: grid;
+  height: auto;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+}
+img.plate {
+  max-width: 100%;
+  align-self: flex-start;
+  height: 300px;
+  object-fit: cover;
+}
+
+section#receptionContainer2 p {
+  padding: 0 4% 2% 4%;
+  line-height: 1.3em;
+}
+
+/* ----------MISSIONARY PAGE----------- */
+h1#mission {
+  font-size: 1.6rem;
+}
+
+/* -----------SERVICES PAGE-------------- */
+div.servicesContainer {
+  margin-top: 3%;
+}
+section#services li,
+section#reception li,
+section#missionary li {
+  font-size: 1.2rem;
+}
+section#services h1,
+section#reception h1 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+section#missionary h1 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+button#missionaryBtn {
+  margin: 2% 0 7% 35%;
+}
+button#receptionBtn {
+  margin: 2% 0 7% 35%;
+}
+
+/* -----------FEATURE TEMPLE------------- */
+section#intro h1,
+section#feature h1 {
+  margin-top: 3%;
+}
+section#feature {
+  display: grid;
+  height: auto;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+}
+img.feature {
+  max-width: 100%;
+  align-self: flex-start;
+  height: 540px;
+  object-fit: cover;
+}
+section#feature h1 {
+}
+div.templeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+section#feature h2 {
+  font-size: 1rem;
+  margin: 0 5% 1% 5%;
+  font-family: "Montserrat", sans-serif;
+}
+div#col {
+  margin: 2% 4% 0 5%;
+  column-count: 2;
+  column-gap: 50px;
+  /* margin-left: 5%; */
+  /* column-width: 100px; */
+}
+h2#templeName {
+  text-align: center;
+  width: 85%;
+}
+div#col h2 {
+  margin: 0 5% 1% 1%;
+}
+section#feature ul li {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  line-height: 1.3em;
+}
+section#feature p {
+  padding: 0 4% 2% 4%;
+  line-height: 1.3em;
+}
+
+/* -------WEATHERBOX---------- */
+.weatherBox {
+  top: 100px;
+  left: 20px;
+}
+
+/* -------CONTACT US PAGE------ */
+div.gmap_canvas {
+  height: 300px;
+  width: 400px;
+}
+div.contact h3 {
+  font-size: 1.3rem;
+}
+div.contact li {
+  font-size: 1.1rem;
+}
+
+div.mapouter {
+  height: 300px;
+  width: 400px;
+  font-size: 0.8em;
+}
+.contactFormContainer div.form form h1 {
+  font-size: 1.6rem;
+}
+div.contactFormContainer div.form form h2 {
+  margin-top: 5px;
+  padding: 0;
+  line-height: 1.4rem;
+}
+
+/* ------RESERVATION PAGE-------- */
+#reservationContainer div.form form h1 {
+  font-size: 1.6rem;
+}
+#reservationContainer div.form form h2 {
+  margin-top: 5px;
+  padding: 0;
+  line-height: 1.4rem;
+}
+/* -------FOOTER---------- */
+footer section.contact {
+  width: 100%;
+  text-align: center;
+}
+.contactText p {
+  font-size: 0.8em;
+}
+#socialMedia img {
+  /* padding: 3px; */
+  width: 30px;
+}
+
+footer div.attributions p {
+  font-size: 1rem;
+  text-align: center;
+}
+/* -----FOOTER SECONDARY NAVIGATION----- */
+
+footer ul#secondaryNav li.secNav {
+  font-size: 1.1rem;
+}
