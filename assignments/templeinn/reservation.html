@@ -1,194 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Reservations | Temple Inn & Suites | 240-999-8888</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Temple Inn & Suites Reservation Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/temple-icon.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/small.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/medium.css"
+      media="screen and (min-width:640px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/large.css"
+      media="screen and (min-width:1024px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Reservations | Temple Inn & Suites | 240-999-8888</title>
-  <meta charset="utf-8" />
-  <meta name="description" content="Temple Inn & Suites Reservation Page" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./images/temple-icon.png" type="image/png" />
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="./css/small.css" />
-  <link rel="stylesheet" type="text/css" href="./css/medium.css" media="screen and (min-width:640px)" />
-  <link rel="stylesheet" type="text/css" href="./css/large.css" media="screen and (min-width:1024px)" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header class="header clearfix">
-
-    <div class="container">
-      <!-- -----------LOGO--------------- -->
-      <div class="header-left">
-        <a href="index2.html">
-          <figure class="logo">
-            <img src="./images/templelogo.jpg" alt="temple inn & suites logo" sizes="25vw" srcset="
-                    ./images/templelogo-320.jpg   320w,
-                    ./images/templelogo-640.jpg   640w,
-                    ./images/templelogo-1028.jpg 1024w
-                  " />
-          </figure>
-        </a>
+  <body>
+    <header class="header clearfix">
+      <div class="container">
+        <!-- LOGO -->
+        <div class="header-left">
+          <a href="index2.html">
+            <figure class="logo">
+              <img
+                src="./images/templelogo.jpg"
+                alt="temple inn & suites logo"
+                sizes="25vw"
+                srcset="
+                  ./images/templelogo-320.jpg   320w,
+                  ./images/templelogo-640.jpg   640w,
+                  ./images/templelogo-1028.jpg 1024w
+                "
+              />
+            </figure>
+          </a>
+        </div>
+        <!-- CONTACT INFO -->
+        <div class="header-right">
+          <h2 class="font2">
+            <span
+              >4800 Montgomery Ln #300<br />
+              BETHESDA,&nbsp;MD&nbsp;20814<br />
+              240-999-8888</span
+            >
+          </h2>
+        </div>
+        <!-- RESERVATIONS BUTTON -->
+        <button
+          type="button"
+          id="bookNow"
+          onclick="location.href='reservation.html'"
+        >
+          Make Reservation
+        </button>
       </div>
-      <!-- -----------CONTACT INFO---------- -->
-      <div class="header-right">
-        <h2 class="font2">
-          <span>4800 Montgomery Ln #300</br>
-            BETHESDA,&nbsp;MD&nbsp;20814<br>
-            240-999-8888</span>
-        </h2>
+      <!-- TAGLINE -->
+
+      <div id="tagline">
+        <h3>
+          Providing Overnight Accomodations & Services for Temple Patrons
+        </h3>
       </div>
-      <!-- -------RESERVATIONS BUTTON------------ -->
-      <button type="button" id="bookNow" onclick="location.href='reservation.html'">Make Reservation</button>
-    </div>
-    <!-- ------TAGLINE--------- -->
+    </header>
+    <!-- NAVBAR -->
+    <header class="headerNav">
+      <div>
+        <!-- Collapsible content -->
+        <nav class="navbar">
+          <!-- hamburger menu symbol -->
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="primaryNav hide">
+            <li>
+              <a href="index2.html" class="nav-link">Home </a>
+            </li>
+            <li class="active">
+              <a href="reservation.html" class="nav-link">Reservations</a>
+            </li>
+            <li>
+              <a href="temples.html" class="nav-link">Temples</a>
+            </li>
 
-    <div id="tagline">
-      <h3>
-        Providing Overnight Accomodations & Services for Temple Patrons
-      </h3>
-    </div>
+            <li>
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="parent">
+              <a href="services.html" class="nav-link">Services ></a>
 
-  </header>
-  <!-- ------NAVBAR----------- -->
-  <header class="headerNav">
-    <div>
-      <!-- Collapsible content -->
-      <nav class="navbar">
-        <!-- hamburger menu symbol -->
-        <button onclick="toggleMenu()">&#9776; Menu</button>
-        <ul id="primaryNav" class="primaryNav hide">
-          <li>
-            <a href="index2.html" class="nav-link">Home </a>
-          </li>
-          <li  class="active">
-            <a href="reservation.html" class="nav-link">Reservations</a>
-          </li>
-          <li>
-            <a href="temples.html" class="nav-link">Temples</a>
-          </li>
-          
-          <li>
-            <a href="contact.html" class="nav-link">Contact Us</a>
-          </li>
-          <li class="parent">
-            <a href="services.html" class="nav-link">Services ></a>
-          
-            <ul class="child">
-              <li>
-                <a class="nav-link" href="missionary.html">Missionary</a>
-              </li>
-              <li>
-                <a class="nav-link" href="reception.html">Wedding</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+              <ul class="child">
+                <li>
+                  <a class="nav-link" href="missionary.html">Missionary</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="reception.html">Wedding</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <div class="wrapper">
-    <main>
-      <!-- -----HERO IMAGE----------------- -->
-      <img src="./images/reservation-hero.jpg" alt="hotel room with window image" class="hero" sizes="100vw" srcset="
-                ./images/reservation-hero320.jpg   320w,
-                ./images/reservation-hero640.jpg   640w,
-                ./images/reservation-hero1024.jpg 1024w
-              " />
+    <div class="wrapper">
+      <main>
+        <!-- HERO IMAGE -->
+        <img
+          src="./images/reservation-hero.jpg"
+          alt="hotel room with window image"
+          class="hero"
+          sizes="100vw"
+          srcset="
+            ./images/reservation-hero320.jpg   320w,
+            ./images/reservation-hero640.jpg   640w,
+            ./images/reservation-hero1024.jpg 1024w
+          "
+        />
 
-     
-        <!-- ------------RESERVATION FORM----------------------- -->
+        <!-- RESERVATION FORM -->
         <section id="reservationContainer">
-        <div class="formContainer">
-          <div class="form">
-            <form method="get" action="reservation-confirmation.html">
-              <h1>Make a Reservation </h1>
-              <h2>at Temple Inn & Suites</h2>
-<fieldset>
-  <legend>Contact Information</legend>
-              <label class="top">Full Name:*<input type="text" name="name" pattern="[a-zA-Z]{2,}\s[a-zA-Z]{2,}"
-                  required /></label>
-              <label class="top">Email:*<input type="email" name="email" placeholder="someone@gmail.com"
-                  required /></label>
-              <label class="top">Phone:*<input type="tel" name="phone" placeholder="1235551234" required /></label> 
-              <label class="top">State/Country:*<input type="text" name="state"  required /></label>
-              </fieldset>
+          <div class="formContainer">
+            <div class="form">
+              <form method="get" action="reservation-confirmation.html">
+                <h1>Make a Reservation</h1>
+                <h2>at Temple Inn & Suites</h2>
+                <fieldset>
+                  <legend>Contact Information</legend>
+                  <label class="top"
+                    >Full Name:*<input
+                      type="text"
+                      name="name"
+                      pattern="[a-zA-Z]{2,}\s[a-zA-Z]{2,}"
+                      required
+                  /></label>
+                  <label class="top"
+                    >Email:*<input
+                      type="email"
+                      name="email"
+                      placeholder="someone@gmail.com"
+                      required
+                  /></label>
+                  <label class="top"
+                    >Phone:*<input
+                      type="tel"
+                      name="phone"
+                      placeholder="1235551234"
+                      required
+                  /></label>
+                  <label class="top"
+                    >State/Country:*<input type="text" name="state" required
+                  /></label>
+                </fieldset>
 
-              <fieldset>
-                <legend>Reservation</legend>
-                <label class="top">Location<select id="region">
-                    <option value="" disabled selected>Where to?   &#9662;</option>
-                    <option value="Kansas City MO">Kansas City, MO</option>
-                    <option value="Fort Collins CO">Fort Collins, CO</option>
-                    <option value="Boston MA">Boston, MA</option>
-                    <option value="Kona Hawaii">Kona, HI</option>
-                    <option value="Bismark ND">Bismark, ND</option>
-                    
-                   
-                  </select>
-                </label>
-                <label class="top">Check-in Date <input type="date" name="arrive-date" /></label>
-                <label class="top">Departure Date <input type="date" name="depart-date" /></label>
-                <label class="top">Room Type<input list="room-type" name="room-type" />
-                  <datalist id="room-type">
-                    <option value="Kitchenette Suite"></option>
-                    <option value="King"></option>
-                    <option value="Queen"></option>
-                    <option value="Double"></option>
-                    <option value="Twin"></option>
-                  </datalist>
-                </label>
-                <label class="top">Rooms*<input type="number" name="rooms" placeholder="1 Room" required></label>
-                <label class="top">Adults* (Max 6 guests/room)<input type="number" name="adults" placeholder="1 Adult per Room" required /></label>
-                <label class="top">Children*<input type="number" name="children" placeholder="0 Children per Room" required /></label>
-              <label class="comments top">Special Accomodations/Comments:<textarea id="comments" name="comments" rows="10"
-                  cols="43"></textarea>
-              </label>
-              </fieldset>
+                <fieldset>
+                  <legend>Reservation</legend>
+                  <label class="top"
+                    >Location<select id="region">
+                      <option value="" disabled selected
+                        >Where to? &#9662;</option
+                      >
+                      <option value="Kansas City MO">Kansas City, MO</option>
+                      <option value="Fort Collins CO">Fort Collins, CO</option>
+                      <option value="Boston MA">Boston, MA</option>
+                      <option value="Kona Hawaii">Kona, HI</option>
+                      <option value="Bismark ND">Bismark, ND</option>
+                    </select>
+                  </label>
+                  <label class="top"
+                    >Check-in Date <input type="date" name="arrival"
+                  /></label>
+                  <label class="top"
+                    >Departure Date <input type="date" name="departure"
+                  /></label>
+                  <label class="top"
+                    >Room Type<input list="room-type" name="room-type" />
+                    <datalist id="room-type">
+                      <option value="Kitchenette Suite"></option>
+                      <option value="King"></option>
+                      <option value="Queen"></option>
+                      <option value="Double"></option>
+                      <option value="Twin"></option>
+                    </datalist>
+                  </label>
+                  <label class="top"
+                    >Rooms*<input
+                      type="number"
+                      name="rooms"
+                      placeholder="1 Room"
+                      required
+                  /></label>
+                  <label class="top"
+                    >Adults* (Max 6 guests/room)<input
+                      type="number"
+                      name="adults"
+                      placeholder="1 Adult per Room"
+                      required
+                  /></label>
+                  <label class="top"
+                    >Children*<input
+                      type="number"
+                      name="children"
+                      placeholder="0 Children per Room"
+                      required
+                  /></label>
+                  <label class="comments top"
+                    >Special Accomodations/Comments:<textarea
+                      id="comments"
+                      name="comments"
+                      rows="10"
+                      cols="43"
+                    ></textarea>
+                  </label>
+                </fieldset>
 
-              <input type="submit" value="Book My Reservation" class="submitBtn" />
-            </form>
+                <input
+                  type="submit"
+                  value="Book My Reservation"
+                  class="submitBtn"
+                />
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <section class="contact clearfix">
+        <div id="contactInfoBox">
+          <div id="socialMedia">
+            <a href="https://www.facebook.com" aria-label="facebook"
+              ><img src="./images/facebook.png" alt="facebook icon"
+            /></a>
+            <a href="https://pinterest.com" aria-label="pinterest"
+              ><img src="./images/pinterest.png" alt="pinterest icon"
+            /></a>
+            <a href="https://twitter.com" aria-label="twitter"
+              ><img src="./images/twitter.png" alt="twitter icon"
+            /></a>
+          </div>
+
+          <ul id="secondaryNav">
+            <li class="secNav"><a class="link1" href="index2.html">Home</a></li>
+            <li class="secNav"><a href="reservation.html">Reservation</a></li>
+            <li class="secNav"><a href="temples.html">Temples</a></li>
+            <li class="secNav"><a href="contact.html">Contact Us</a></li>
+            <li class="secNav"><a href="services.html">Services</a></li>
+            <li class="secNav"><a href="missionary.html">Missionaries</a></li>
+            <li class="secNav"><a href="reception.html">Weddings</a></li>
+          </ul>
+
+          <div class="attributions">
+            <p>
+              &copy;2019 Temple Inn & Suites | Designed by Shan'l Parish
+              |&nbsp;<a href="resources.html">Resources</a>
+            </p>
           </div>
         </div>
       </section>
+    </footer>
 
-    </main>
-  </div>
-  <!-- ---------------FOOTER-------------------------------- -->
-  <footer>
-    <section class="contact clearfix">
-      <div id="contactInfoBox">
-
-        <div id="socialMedia">
-          <a href="https://www.facebook.com" aria-label="facebook"><img src="./images/facebook.png"
-              alt="facebook icon" /></a>
-          <a href="https://pinterest.com" aria-label="pinterest"><img src="./images/pinterest.png"
-              alt="pinterest icon" /></a>
-          <a href="https://twitter.com" aria-label="twitter"><img src="./images/twitter.png" alt="twitter icon" /></a>
-        </div>
-
-        <ul id="secondaryNav">
-          <li class="secNav"><a class="link1" href="index2.html">Home</a></li>
-          <li class="secNav"><a href="reservation.html">Reservation</a></li>
-          <li class="secNav"><a href="temples.html">Temples</a></li>
-          <li class="secNav"><a href="contact.html">Contact Us</a></li>
-          <li class="secNav"><a href="services.html">Services</a></li>
-          <li class="secNav"><a href="missionary.html">Missionaries</a></li>
-          <li class="secNav"><a href="reception.html">Weddings</a></li>
-        </ul>
-
-        <div class="attributions">
-          <p>
-            &copy;2019 Temple Inn & Suites | Designed by Shan'l Parish |&nbsp;<a href="resources.html">Resources</a>
-          </p>
-        </div>
-    </section>
-  </footer>
-
-  <script src="js/hamburger.js"></script>
-  <script src="js/cityinfo.js"></script>
-
-</body>
-
+    <script src="js/hamburger.js"></script>
+    <script src="js/cityinfo.js"></script>
+  </body>
 </html>

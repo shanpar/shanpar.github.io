@@ -1,4 +1,3 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -38,6 +37,7 @@ p {
   align-items: flex-start;
   position: relative;
 }
+
 /* ------RESERVE NOW BUTTON----------- */
 .container button#bookNow {
   padding: 0.4rem;
@@ -132,7 +132,6 @@ ul.primaryNav li a.nav-link {
   padding: 0 0.5em;
 }
 .navbar button {
-  /* margin: 0.2rem 2%; */
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
@@ -141,7 +140,6 @@ ul.primaryNav li a.nav-link {
 }
 .navbar button:focus {
   outline: none;
-  /* box-shadow: none; */
 }
 nav li {
   display: block;
@@ -172,15 +170,12 @@ nav ul li.parent ul.child {
 }
 nav ul li.parent:hover ul.child {
   display: block;
-  /* position: absolute;
-  top: 60px; */
   background: #5eb1bf;
   width: 100%;
 
   text-align: left;
 }
 nav ul li.parent ul.child li {
-  /* width: 100%; */
   padding: 0;
   border-bottom: 1px solid #4f9ba9;
 }
@@ -199,8 +194,6 @@ nav ul li.parent ul.child li a {
   text-align: left;
 }
 main {
-  /* display: inline-block; */
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -218,12 +211,12 @@ main img.hero {
   margin: 0;
   padding: 0;
 }
+
 /* --------HOME PAGE - INTRO TEMPLE INN-------------- */
 section#intro {
   background-color: #c6c5b9;
   display: flex;
   flex-direction: column;
-  /* margin-top: 5px; */
   position: relative;
 }
 img.hotel {
@@ -240,6 +233,7 @@ section#intro h1 {
 section#intro p {
   padding: 2% 4% 4% 4%;
 }
+
 /* -----------FEATURE TEMPLE------------- */
 section#feature {
   background-color: #d0f4ea;
@@ -271,8 +265,6 @@ div#col {
   margin: 4% 4% 0 5%;
   column-count: 2;
   column-gap: 20px;
-  /* margin-left: 5%; */
-  /* column-width: 100px; */
 }
 div#col h2 {
   margin: 0 5% 1% 0;
@@ -290,8 +282,6 @@ section#feature p {
 
 /* ---------TEMPLE CARDS----------------- */
 section.templeCards {
-  /* display: flex;
-  flex-direction: column; */
   margin: 5% 4%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -303,14 +293,12 @@ section.templeCards div.templeGallery {
 }
 section.templeCards div.card h1 {
   margin: 0;
-  /* margin-top: 5%; */
   color: #5eb1bf;
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   padding-top: 2%;
 }
 section.templeCards div.card {
-  /* margin-top: 5%; */
   display: flex;
   flex-direction: column;
   border: 1px solid #d3d3d3;
@@ -380,6 +368,7 @@ div.card div.closures li {
   list-style-type: none;
   line-height: 1.2rem;
 }
+
 /* ------------WEATHERBOX----------------- */
 .weatherBox {
   display: grid;
@@ -426,7 +415,6 @@ section#receptionContainer1 {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  /* position: relative; */
 }
 img.veil {
   width: 100%;
@@ -594,6 +582,7 @@ section#mission3 li {
   line-height: 1.5rem;
   list-style-type: square;
 }
+
 /* ------------CONTACT US PAGE------------------ */
 section#contactContainer {
   display: flex;
@@ -637,6 +626,8 @@ div.gmap_canvas {
   width: 300px;
   margin-top: 5%;
   text-align: center;
+  border: 0;
+  overflow: none;
 }
 
 div.mapouter {
@@ -645,6 +636,7 @@ div.mapouter {
   width: 300px;
   font-size: 0.8em;
 }
+
 /* ------CONTACT US FORM---------- */
 
 div.contactFormContainer {
@@ -701,21 +693,21 @@ form div {
 }
 form label.top input,
 form label.top select {
-  -webkit-appearance: none; /*makes formatting work better across different browsers*/
+  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
   border-radius: 4px;
-  padding: 0.75rem; /*makes them at least 44px for touchability*/
+  padding: 0.75rem;
   color: #555;
   width: 100%;
-  max-width: 20rem; /*right size for small screen and limits width for larger screens so it doesn't stretch too wide */
+  max-width: 20rem;
   background-color: white;
 }
 
 form label.sbs {
   display: block;
-  padding: 0.75rem 0; /*makes them at least 44px for touchability*/
+  padding: 0.75rem 0;
   color: #555;
   text-align: left;
 }
@@ -726,15 +718,15 @@ form label.comments {
   border-radius: 10px;
 }
 form textarea {
-  -webkit-appearance: none; /*makes formatting work better across different browsers*/
+  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
   border-radius: 4px;
-  padding: 0.75rem; /*makes them at least 44px for touchability*/
+  padding: 0.75rem;
   color: #555;
   width: 100%;
-  max-width: 20rem; /*right size for small screen and limits width for larger screens so it doesn't stretch too wide*/
+  max-width: 20rem;
 }
 
 form input.submitBtn {
@@ -747,7 +739,7 @@ form input.submitBtn {
   padding: 0.75rem 1.5rem;
   margin: 2rem 0 2rem 0;
   width: 95%;
-  max-width: 20rem; /*right size for small screen and limits width for larger screens so it doesn't stretch too wide*/
+  max-width: 20rem;
   text-shadow: 0px 1px 0px #808080;
   font-size: 1.1rem;
 }
@@ -761,6 +753,7 @@ form label.top input:required {
 form label.top input:required:valid {
   border-left: #06a438 solid 6px;
 }
+
 /* --------------RESERVATIONS PAGE------------ */
 section#reservationContainer {
   display: flex;
@@ -814,6 +807,7 @@ div.thanks p {
   font-size: 1rem;
   line-height: 1.5em;
 }
+
 /* -------------RESOURCES & ATTRIBUTIONS PAGE-------------- */
 section#resources {
   padding: 5%;
@@ -844,6 +838,7 @@ section#resources ol {
 section#resources img {
   margin: 0 1% 0% 0;
 }
+
 /* --------------FOOTER -CONTACT INFO----------------------- */
 footer {
   width: 100%;
@@ -866,10 +861,10 @@ div#socialMedia {
   text-align: center;
 }
 #socialMedia img {
-  /* padding: 3px; */
   width: 25px;
   margin: 5px;
 }
+
 /* -----FOOTER SECONDARY NAVIGATION----- */
 footer ul#secondaryNav {
   list-style-type: none;
@@ -893,6 +888,7 @@ ul#secondaryNav li.secNav a:before {
 ul#secondaryNav li.secNav a.link1:before {
   content: none;
 }
+
 /*---------- FOOTER-ATTRIBUTIONS --------*/
 div.attributions {
   background-color: #fff;
@@ -908,12 +904,12 @@ footer div.attributions p {
   font-size: 0.7rem;
 }
 div.attributions a {
-  /* text-decoration: none; */
   color: #5eb1bf;
 }
 div.attributions a:hover {
   color: #c6c5b9;
 }
+
 /*------------ TEMPLE CARDS  ---------------*/
 .templeGallery {
   margin: 20px 0;
@@ -921,7 +917,6 @@ div.attributions a:hover {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1rem;
-  /* grid-auto-flow: dense; */
 }
 figure {
   margin: 0;

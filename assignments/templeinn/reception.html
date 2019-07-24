@@ -1,190 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Reception Hall | Temple Inn & Suites| 240-999-8888</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Temple Inn and Suites Reception Hall Reservation Page"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/temple-icon.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/small.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/medium.css"
+      media="screen and (min-width:640px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/large.css"
+      media="screen and (min-width:1024px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Reception Hall | Temple Inn & Suites| 240-999-8888</title>
-  <meta charset="utf-8" />
-  <meta name="description" content="Temple Inn and Suites Reception Hall Reservation Page" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./images/temple-icon.png" type="image/png" />
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="./css/small.css" />
-  <link rel="stylesheet" type="text/css" href="./css/medium.css" media="screen and (min-width:640px)" />
-  <link rel="stylesheet" type="text/css" href="./css/large.css" media="screen and (min-width:1024px)" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <header class="header clearfix">
+      <div class="container">
+        <!-- LOGO -->
+        <div class="header-left">
+          <a href="index2.html">
+            <figure class="logo">
+              <img
+                src="./images/templelogo.jpg"
+                alt="temple inn & suites logo"
+                sizes="25vw"
+                srcset="
+                  ./images/templelogo-320.jpg   320w,
+                  ./images/templelogo-640.jpg   640w,
+                  ./images/templelogo-1028.jpg 1024w
+                "
+              />
+            </figure>
+          </a>
+        </div>
 
-<body>
-  <header class="header clearfix">
+        <!-- CONTACT INFO -->
+        <div class="header-right">
+          <h2 class="font2">
+            <span
+              >4800 Montgomery Ln #300<br />
+              BETHESDA,&nbsp;MD&nbsp;20814<br />
+              240-999-8888</span
+            >
+          </h2>
+        </div>
 
-    <div class="container">
-      <!-- -----------LOGO--------------- -->
-      <div class="header-left">
-        <a href="index2.html">
-          <figure class="logo">
-            <img src="./images/templelogo.jpg" alt="temple inn & suites logo" sizes="25vw" srcset="
-                    ./images/templelogo-320.jpg   320w,
-                    ./images/templelogo-640.jpg   640w,
-                    ./images/templelogo-1028.jpg 1024w
-                  " />
-          </figure>
-        </a>
+        <!-- RESERVATIONS BUTTON -->
+        <button
+          type="button"
+          id="bookNow"
+          onclick="location.href='reservation.html'"
+        >
+          Make Reservation
+        </button>
       </div>
-      <!-- -----------CONTACT INFO---------- -->
-      <div class="header-right">
-        <h2 class="font2">
-          <span>4800 Montgomery Ln #300</br>
-            BETHESDA,&nbsp;MD&nbsp;20814<br>
-            240-999-8888</span>
-        </h2>
+
+      <!-- TAGLINE -->
+      <div id="tagline">
+        <h3>
+          Providing Overnight Accomodations & Services for Temple Patrons
+        </h3>
       </div>
-      <!-- -------RESERVATIONS BUTTON------------ -->
-      <button type="button" id="bookNow" onclick="location.href='reservation.html'">Make Reservation</button>
-    </div>
-    <!-- ------TAGLINE--------- -->
+    </header>
 
-    <div id="tagline">
-      <h3>
-        Providing Overnight Accomodations & Services for Temple Patrons
-      </h3>
-    </div>
+    <!-- NAVBAR -->
+    <header class="headerNav">
+      <div>
+        <!-- Collapsible content -->
+        <nav class="navbar">
+          <!-- hamburger menu symbol -->
+          <button onclick="toggleMenu()">&#9776; Menu</button>
+          <ul id="primaryNav" class="primaryNav hide">
+            <li>
+              <a href="index2.html" class="nav-link">Home </a>
+            </li>
+            <li>
+              <a href="reservation.html" class="nav-link">Reservations</a>
+            </li>
+            <li>
+              <a href="temples.html" class="nav-link">Temples</a>
+            </li>
 
-  </header>
-  <!-- ------NAVBAR----------- -->
-  <header class="headerNav">
-    <div>
-      <!-- Collapsible content -->
-      <nav class="navbar">
-        <!-- hamburger menu symbol -->
-        <button onclick="toggleMenu()">&#9776; Menu</button>
-        <ul id="primaryNav" class="primaryNav hide">
-          <li>
-            <a href="index2.html" class="nav-link">Home </a>
-          </li>
-          <li>
-            <a href="reservation.html" class="nav-link">Reservations</a>
-          </li>
-          <li>
-            <a href="temples.html" class="nav-link">Temples</a>
-          </li>
-          
-          <li>
-            <a href="contact.html" class="nav-link">Contact Us</a>
-          </li>
-          <li class="parent">
-            <a href="services.html" class="nav-link">Services ></a>
-          
-            <ul class="child">
-              <li>
-                <a class="nav-link" href="missionary.html">Missionary</a>
-              </li>
-              <li class="active">
-                <a class="nav-link" href="reception.html">Wedding</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+            <li>
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="parent">
+              <a href="services.html" class="nav-link">Services ></a>
 
-  <div class="wrapper">
-    <main>
-      <!-- -----HERO IMAGE----------------- -->
-      <img src="./images/reception-hero.jpg" alt="hotel room with window image" class="hero" sizes="100vw" srcset="
-                ./images/reception-hero320.jpg   320w,
-                ./images/reception-hero640.jpg   640w,
-                ./images/reception-hero1024.jpg 1024w
-              " />
+              <ul class="child">
+                <li>
+                  <a class="nav-link" href="missionary.html">Missionary</a>
+                </li>
+                <li class="active">
+                  <a class="nav-link" href="reception.html">Wedding</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <!-- -------RECEPTION CENTER INFO----------------- -->
-  <section id="receptionContainer1">
-    <div class="imageContainer">
-      <img src="./images/reception-hall.jpg" class="veil" alt="Reception hall with brown interior and arches"
-      sizes="100vw" srcset="
+    <div class="wrapper">
+      <main>
+        <!-- HERO IMAGE -->
+        <img
+          src="./images/reception-hero.jpg"
+          alt="hotel room with window image"
+          class="hero"
+          sizes="100vw"
+          srcset="
+            ./images/reception-hero320.jpg   320w,
+            ./images/reception-hero640.jpg   640w,
+            ./images/reception-hero1024.jpg 1024w
+          "
+        />
+
+        <!-- RECEPTION CENTER INFO -->
+        <section id="receptionContainer1">
+          <div class="imageContainer">
+            <img
+              src="./images/reception-hall.jpg"
+              class="veil"
+              alt="Reception hall with brown interior and arches"
+              sizes="100vw"
+              srcset="
                 ./images/reception-hall320.jpg   320w,
                 ./images/reception-hall640.jpg   640w,
                 ./images/reception-hall1024.jpg 1024w
-              " /></div>
-    <div class="textIntro">
-    <h1>Temple Inn Reception Center</h1>
-    <p>The Temple Inn Reception Center can be reserved for use for both temple wedding receptions as well as to house the wedding luncheon.  The Reception Center is a beautiful open ballroom that can hold up to 500 people.  It's open floorplan can easily be customized to meet the needs of the wedding party and guests.  </p>
-    </div>
+              "
+            />
+          </div>
+          <div class="textIntro">
+            <h1>Temple Inn Reception Center</h1>
+            <p>
+              The Temple Inn Reception Center can be reserved for use for both
+              temple wedding receptions as well as to house the wedding
+              luncheon. The Reception Center is a beautiful open ballroom that
+              can hold up to 500 people. It's open floorplan can easily be
+              customized to meet the needs of the wedding party and guests.
+            </p>
+          </div>
+        </section>
 
-  </section>
-  <section id="receptionContainer2">
-    <div class="textIntro">
-      <h1>Temple Inn Catering</h1>
-      <p>We offer a simple catering menu for wedding luncheons priced per plate. The Reception Center can seat up to 150
-        people and can easily be customized to meet the needs of the wedding party.</p>
-    </div>
-    <div class="imageContainer"> <img src="./images/catering.jpg" alt="Plated wedding reception food" class="plate"
-    sizes="100vw" srcset="
+        <section id="receptionContainer2">
+          <div class="textIntro">
+            <h1>Temple Inn Catering</h1>
+            <p>
+              We offer a simple catering menu for wedding luncheons priced per
+              plate. The Reception Center can seat up to 150 people and can
+              easily be customized to meet the needs of the wedding party.
+            </p>
+          </div>
+          <div class="imageContainer">
+            <img
+              src="./images/catering.jpg"
+              alt="Plated wedding reception food"
+              class="plate"
+              sizes="100vw"
+              srcset="
                 ./images/catering320.jpg   320w,
                 ./images/catering640.jpg   640w,
                 ./images/catering1024.jpg 1024w
-              " />
+              "
+            />
+          </div>
+        </section>
+
+        <!-- CONTACT US FORM -->
+        <section id="contactContainer">
+          <div class="contactFormContainer">
+            <div class="form">
+              <form method="get" action="thanks.html">
+                <h1>Contact Us</h1>
+                <h2>
+                  Interested in Reserving the Reception Center? <br />Contact us
+                  here.
+                </h2>
+
+                <label class="top"
+                  >Full Name:*<input
+                    type="text"
+                    name="name"
+                    pattern="[a-zA-Z]{2,}\s[a-zA-Z]{2,}"
+                    required
+                /></label>
+                <label class="top"
+                  >Email:*<input
+                    type="email"
+                    name="email"
+                    placeholder="someone@gmail.com"
+                    required
+                /></label>
+                <label class="top"
+                  >Phone:*<input
+                    type="tel"
+                    name="phone"
+                    placeholder="1235551234"
+                    required
+                /></label>
+                <label class="comments top"
+                  >Comments:<textarea
+                    id="comments"
+                    name="comments"
+                    rows="10"
+                    cols="43"
+                  ></textarea>
+                </label>
+
+                <input type="submit" value="Send Message" class="submitBtn" />
+              </form>
             </div>
-
-  </section>
-  
-  <!-- ------------CONTACT US FORM----------------------- -->
-  <section id="contactContainer">
-  <div class="contactFormContainer">
-    <div class="form">
-      <form method="get" action="thanks.html">
-        <h1>Contact Us</h1>
-        <h2>Interested in Reserving the Reception Center? <br>Contact us here.</h2>
-        
-
-        <label class="top">Full Name:*<input type="text" name="name" pattern="[a-zA-Z]{2,}\s[a-zA-Z]{2,}"
-            required /></label>
-        <label class="top">Email:*<input type="email" name="email" placeholder="someone@gmail.com" required /></label>
-        <label class="top">Phone:*<input type="tel" name="phone" placeholder="1235551234" required /></label>
-        <label class="comments top">Comments:<textarea id="comments" name="comments" rows="10" cols="43"></textarea>
-        </label>
-
-        <input type="submit" value="Send Message" class="submitBtn" />
-      </form>
+          </div>
+        </section>
+      </main>
     </div>
-  </div>
-  </section>
-    </main>
-  </div>
 
-  <footer>
-    <section class="contact clearfix">
-      <div id="contactInfoBox">
-
-
-        <div id="socialMedia">
-          <a href="https://www.facebook.com" aria-label="facebook"><img src="./images/facebook.png"
-              alt="facebook icon" /></a>
-          <a href="https://pinterest.com" aria-label="pinterest"><img src="./images/pinterest.png"
-              alt="pinterest icon" /></a>
-          <a href="https://twitter.com" aria-label="twitter"><img src="./images/twitter.png" alt="twitter icon" /></a>
+    <footer>
+      <section class="contact clearfix">
+        <div id="contactInfoBox">
+          <div id="socialMedia">
+            <a href="https://www.facebook.com" aria-label="facebook"
+              ><img src="./images/facebook.png" alt="facebook icon"
+            /></a>
+            <a href="https://pinterest.com" aria-label="pinterest"
+              ><img src="./images/pinterest.png" alt="pinterest icon"
+            /></a>
+            <a href="https://twitter.com" aria-label="twitter"
+              ><img src="./images/twitter.png" alt="twitter icon"
+            /></a>
+          </div>
         </div>
 
-<ul id="secondaryNav">
-  <li class="secNav"><a class="link1" href="index2.html">Home</a></li>
-  <li class="secNav"><a href="reservation.html">Reservation</a></li>
-  <li class="secNav"><a href="temples.html">Temples</a></li>
-  <li class="secNav"><a href="contact.html">Contact Us</a></li>
-  <li class="secNav"><a href="services.html">Services</a></li>
-  <li class="secNav"><a href="missionary.html">Missionaries</a></li>
-  <li class="secNav"><a href="reception.html">Weddings</a></li>
-</ul>
+        <ul id="secondaryNav">
+          <li class="secNav"><a class="link1" href="index2.html">Home</a></li>
+          <li class="secNav"><a href="reservation.html">Reservation</a></li>
+          <li class="secNav"><a href="temples.html">Temples</a></li>
+          <li class="secNav"><a href="contact.html">Contact Us</a></li>
+          <li class="secNav"><a href="services.html">Services</a></li>
+          <li class="secNav"><a href="missionary.html">Missionaries</a></li>
+          <li class="secNav"><a href="reception.html">Weddings</a></li>
+        </ul>
 
         <div class="attributions">
           <p>
-            &copy;2019 Temple Inn & Suites | Designed by Shan'l Parish |&nbsp;<a href="resources.html">Resources</a>
+            &copy;2019 Temple Inn & Suites | Designed by Shan'l Parish |&nbsp;<a
+              href="resources.html"
+              >Resources</a
+            >
           </p>
         </div>
-    </section>
-  </footer>
-  <script src="js/currentdate.js"></script>
-  <script src="js/hamburger.js"></script>
-  <script src="js/cityinfo.js"></script>
-</body>
+      </section>
+    </footer>
 
+    <script src="js/hamburger.js"></script>
+  </body>
 </html>

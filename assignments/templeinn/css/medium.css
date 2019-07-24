@@ -37,6 +37,7 @@ nav li {
 nav {
   margin-top: 20px;
 }
+
 /* --------MAIN-------------- */
 main {
   width: 100%;
@@ -46,6 +47,7 @@ main h2 {
   font-size: 28px;
   padding: 10px 0;
 }
+
 /* --------INTRO TEMPLE INN-------------- */
 section#intro {
   display: grid;
@@ -56,11 +58,8 @@ section#intro {
 div.imageContainer {
   display: flex;
   justify-content: normal;
-  /* align-items: center; */
 }
 img.hotel {
-  /* width: 30%; */
-  /* display: block; */
   height: 450px;
   align-self: flex-start;
   object-fit: cover;
@@ -70,24 +69,22 @@ div.templeInnIntro {
 section#intro h1 {
 }
 section#intro p {
-  /* text-align: left; */
   padding: 2% 4% 4% 4%;
 }
 
 /* ------------TEMPLE CARDS---------- */
-div#templeCol {
+div.templeCol {
   margin: 2% 4% 0 0;
   column-count: 2;
   column-gap: 40px;
-  /* margin-left: 5%; */
-  /* column-width: 100px; */
 }
-div.card div#templeCol.content {
+div.card div.templeCol.content {
   padding: 2% 4%;
   background-color: #e7e6db;
   border-radius: 10px;
   margin: 2%;
 }
+
 /* -----WEDDING RECEPTION CENTER PAGE----- */
 section#receptionContainer1 {
   display: grid;
@@ -97,15 +94,12 @@ section#receptionContainer1 {
 }
 
 img.veil {
-  /* width: 30%; */
-  /* display: block; */
   height: 300px;
   align-self: flex-start;
   object-fit: cover;
 }
 
 section#receptionContainer1 p {
-  /* text-align: left; */
   padding: 2% 4% 4% 4%;
 }
 
@@ -196,8 +190,6 @@ div#col {
   margin: 2% 4% 0 5%;
   column-count: 2;
   column-gap: 50px;
-  /* margin-left: 5%; */
-  /* column-width: 100px; */
 }
 h2#templeName {
   text-align: center;
@@ -258,6 +250,7 @@ div.contactFormContainer div.form form h2 {
   padding: 0;
   line-height: 1.4rem;
 }
+
 /* -------FOOTER---------- */
 footer section.contact {
   width: 100%;
@@ -267,7 +260,6 @@ footer section.contact {
   font-size: 0.8em;
 }
 #socialMedia img {
-  /* padding: 3px; */
   width: 30px;
 }
 
@@ -275,6 +267,7 @@ footer div.attributions p {
   font-size: 1rem;
   text-align: center;
 }
+
 /* -----FOOTER SECONDARY NAVIGATION----- */
 
 footer ul#secondaryNav li.secNav {
