@@ -62,7 +62,7 @@
             <a href="index2.html" class="nav-link">Home </a>
           </li>
           <li  class="active">
-            <a href="reservation.html" class="nav-link">Reserve</a>
+            <a href="reservation.html" class="nav-link">Reservations</a>
           </li>
           <li>
             <a href="temples.html" class="nav-link">Temples</a>
@@ -119,17 +119,17 @@
                 <legend>Reservation</legend>
                 <label class="top">Location<select id="region">
                     <option value="" disabled selected>Where to?   &#9662;</option>
-                    <option value="Acca Ghana">Acca Ghana</option>
-                    <option value="Bismarck North Dakota">Bismarck North Dakota</option>
-                    <option value="Boston Massachusetts">Boston Massachusetts</option>
-                    <option value="Kona Hawaii">Kona Hawaii</option>
-                    <option value="London England">London England</option>
+                    <option value="Kansas City MO">Kansas City, MO</option>
+                    <option value="Fort Collins CO">Fort Collins, CO</option>
+                    <option value="Boston MA">Boston, MA</option>
+                    <option value="Kona Hawaii">Kona, HI</option>
+                    <option value="Bismark ND">Bismark, ND</option>
                     
                    
                   </select>
                 </label>
                 <label class="top">Check-in Date <input type="date" name="arrive-date" /></label>
-                <label class="top">Depart Date <input type="date" name="depart-date" /></label>
+                <label class="top">Departure Date <input type="date" name="depart-date" /></label>
                 <label class="top">Room Type<input list="room-type" name="room-type" />
                   <datalist id="room-type">
                     <option value="Kitchenette Suite"></option>
@@ -139,8 +139,9 @@
                     <option value="Twin"></option>
                   </datalist>
                 </label>
-                <label class="top">Adults*<input type="number" name="adults" required /></label>
-                <label class="top">Children*<input type="number" name="children" required /></label>
+                <label class="top">Rooms*<input type="number" name="rooms" placeholder="1 Room" required></label>
+                <label class="top">Adults* (Max 6 guests/room)<input type="number" name="adults" placeholder="1 Adult per Room" required /></label>
+                <label class="top">Children*<input type="number" name="children" placeholder="0 Children per Room" required /></label>
               <label class="comments top">Special Accomodations/Comments:<textarea id="comments" name="comments" rows="10"
                   cols="43"></textarea>
               </label>
@@ -166,6 +167,16 @@
               alt="pinterest icon" /></a>
           <a href="https://twitter.com" aria-label="twitter"><img src="./images/twitter.png" alt="twitter icon" /></a>
         </div>
+
+        <ul id="secondaryNav">
+          <li class="secNav"><a class="link1" href="index2.html">Home</a></li>
+          <li class="secNav"><a href="reservation.html">Reservation</a></li>
+          <li class="secNav"><a href="temples.html">Temples</a></li>
+          <li class="secNav"><a href="contact.html">Contact Us</a></li>
+          <li class="secNav"><a href="services.html">Services</a></li>
+          <li class="secNav"><a href="missionary.html">Missionaries</a></li>
+          <li class="secNav"><a href="reception.html">Weddings</a></li>
+        </ul>
 
         <div class="attributions">
           <p>

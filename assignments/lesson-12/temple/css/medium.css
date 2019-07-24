@@ -241,7 +241,7 @@ div.mapouter {
   font-size: 0.8em;
 }
 .contactFormContainer div.form form h1 {
-  font-size: 1.6;
+  font-size: 1.6rem;
 }
 div.contactFormContainer div.form form h2 {
   margin-top: 5px;
@@ -249,6 +249,15 @@ div.contactFormContainer div.form form h2 {
   line-height: 1.4rem;
 }
 
+/* ------RESERVATION PAGE-------- */
+#reservationContainer div.form form h1 {
+  font-size: 1.6rem;
+}
+#reservationContainer div.form form h2 {
+  margin-top: 5px;
+  padding: 0;
+  line-height: 1.4rem;
+}
 /* -------FOOTER---------- */
 footer section.contact {
   width: 100%;
@@ -265,4 +274,9 @@ footer section.contact {
 footer div.attributions p {
   font-size: 1rem;
   text-align: center;
+}
+/* -----FOOTER SECONDARY NAVIGATION----- */
+
+footer ul#secondaryNav li.secNav {
+  font-size: 1.1rem;
 }

@@ -114,6 +114,9 @@ img.hotel {
 }
 
 /* -----------FEATURED TEMPLE----------- */
+section#feature {
+  margin-top: 2%;
+}
 img.feature {
   height: 465px;
   object-fit: cover;
@@ -144,19 +147,11 @@ section#feature p {
   width: 130px;
   padding-right: 4px;
 }
-/*------------ 5 DAY FORECAST TABLE---------- */
-
-.fiveDayForecast {
-  display: block;
-  font-size: 1.1em;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-#forecast {
-  text-align: center;
-}
 
 /* ----------SERVICES PAGE--------------------- */
+section#receptionContainer2 {
+  margin-top: 2%;
+}
 div.servicesContainer {
   display: flex;
   flex-direction: row;
@@ -282,7 +277,7 @@ section#mission3 img {
   width: 100%;
 }
 
-/* ----------EVENTS------------------ */
+/* ----------EVENTS------------------
 
 div#events ul {
   font-size: 1rem;
@@ -290,9 +285,9 @@ div#events ul {
 .townEvents h3.title {
   font-size: 24px;
   padding-top: 1rem;
-}
+} */
 /* ----------CITY DATA BOXES---------- */
-.towngallery {
+/* .towngallery {
   margin: 40px 0 10px 0;
 }
 .towncard:hover {
@@ -306,7 +301,7 @@ div#events ul {
   color: #716f6f;
   margin: 15px 0 25px 0;
   line-height: 1.5em;
-}
+} */
 
 /* -----------CONTACT US PAGE--------------- */
 section#contactContainer {
@@ -414,11 +409,6 @@ footer section.contact iframe {
 
 #socialMedia img {
   width: 35px;
-}
-/* <-- --------FOOTER-ATTRIBUTIONS----------- --> */
-
-footer div.attributions p {
-  font-size: 1rem;
 }
 
 /* <-----------GALLERY--------------- --> */

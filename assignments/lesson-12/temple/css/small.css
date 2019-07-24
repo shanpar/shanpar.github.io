@@ -22,7 +22,7 @@ body {
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  color: #0f0f0f;
+  color: #0c3600;
   line-height: 1.3em;
 }
 /*------------- HEADER-------------------- */
@@ -86,6 +86,7 @@ p {
   line-height: 0.75rem;
   letter-spacing: 0.1em;
   color: #0c3600;
+  opacity: 0.9;
 }
 
 div#tagline h3 {
@@ -374,24 +375,10 @@ div.card div.content2 li {
 div.card div.content2 ul {
   font-family: "Montserrat", sans-serif;
 }
-/* div#KansasCity {
-  background-color: #fff;
-}
-div#FortCollins {
-  background-color: #c6c5b9;
-  color: #0f0f0f;
-} */
-div.three {
-  background-color: #0c3600;
-  color: #fff;
-}
-div.four {
-  background-color: #d0f4ea;
-  color: #0f0f0f;
-}
-div.five {
-  background-color: #5eb1bf;
-  color: #fff;
+div.card div.closures li {
+  font-size: 0.8rem;
+  list-style-type: none;
+  line-height: 1.2rem;
 }
 /* ------------WEATHERBOX----------------- */
 .weatherBox {
@@ -774,6 +761,46 @@ form label.top input:required {
 form label.top input:required:valid {
   border-left: #06a438 solid 6px;
 }
+/* --------------RESERVATIONS PAGE------------ */
+section#reservationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+section#reservationContainer div.formContainer div.form {
+  background-color: #fff;
+  padding: 5% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#reservationContainer div.form fieldset {
+  border: none;
+  border-top: 1px solid #555;
+  margin-top: 10%;
+}
+#reservationContainer div.form fieldset legend {
+  padding: 0 3%;
+}
+#reservationContainer div.form form {
+  text-align: center;
+  align-self: center;
+}
+#reservationContainer div.form form h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding-bottom: 1%;
+  color: #5eb1bf;
+}
+#reservationContainer div.form form h2 {
+  font-size: 1em;
+  color: #0f0f0f;
+  opacity: 0.6;
+}
 /* -------------THANKS PAGE-------------------------------- */
 main div.thanks {
   padding: 5%;
@@ -789,12 +816,33 @@ div.thanks p {
 }
 /* -------------RESOURCES & ATTRIBUTIONS PAGE-------------- */
 section#resources {
-  padding: 5% 5% 5% 10%;
+  padding: 5%;
 }
 
 section#resources li,
 section#resources h1 {
   text-align: left;
+}
+section#resources h1 {
+  font-size: 1.3rem;
+  color: #5eb1bf;
+  margin: 0;
+  padding-bottom: 1%;
+}
+section#resources h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2%;
+  font-size: 1.1rem;
+  color: #5eb1bf;
+}
+section#resources ol {
+  line-height: 1.5rem;
+  color: #0c3600;
+  list-style-type: none;
+}
+section#resources img {
+  margin: 0 1% 0% 0;
 }
 /* --------------FOOTER -CONTACT INFO----------------------- */
 footer {
@@ -808,6 +856,10 @@ footer {
   align-items: center;
   width: 100%;
 }
+div.contact li,
+div.contact h3 {
+  color: #0c3600;
+}
 
 div#socialMedia {
   padding-top: 10px;
@@ -817,6 +869,29 @@ div#socialMedia {
   /* padding: 3px; */
   width: 25px;
   margin: 5px;
+}
+/* -----FOOTER SECONDARY NAVIGATION----- */
+footer ul#secondaryNav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+}
+footer ul#secondaryNav li.secNav {
+  font-size: 0.8rem;
+}
+ul#secondaryNav li.secNav a {
+  color: #0c3600;
+  text-decoration: none;
+}
+ul#secondaryNav li.secNav a:hover {
+  color: #5eb1bf;
+}
+ul#secondaryNav li.secNav a:before {
+  content: "|";
+}
+ul#secondaryNav li.secNav a.link1:before {
+  content: none;
 }
 /*---------- FOOTER-ATTRIBUTIONS --------*/
 div.attributions {
@@ -870,68 +945,6 @@ figure img {
   height: 100%;
   width: 100%;
 }
-
-/* -------------TOWN STAT CARDS------------- */
-/* .towngallery {
-  margin: 25px 4%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 1rem;
-}
-.towncard {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #d3d3d3;
-  box-shadow: 0px 1px 3px #555;
-  background-color: white;
-  border-radius: 0.25rem;
-  align-content: center;
-}
-.towngallery a {
-  text-decoration: none;
-}
-.towncard h3 {
-  font-style: italic;
-  font-size: 1rem;
-  color: #404040;
-  margin: 5px 0;
-}
-
-.towncard .cardh2 {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #eb7903;
-  opacity: 0.85;
-  color: white;
-  margin: 10px 8px 10px 8px;
-  border-radius: 3px;
-}
-
-.towncard figure.image {
-  display: flex;
-  flex-direction: column;
-  order: 1;
-  padding: 8px;
-  margin: 0 2% 5px 2%;
-}
-.towncard img {
-  box-shadow: 0 0 5px #000;
-  border-radius: 3px;
-}
-
-.towncard article {
-  text-align: center;
-  color: #404040;
-  margin: 15px 8px;
-  line-height: 1.5em;
-}
-.towncard hr {
-  background-color: #404040;
-  width: 90%;
-  margin: 0 auto;
-  opacity: 0.5;
-} */
 
 /* ----------clearfix------------- */
 .clearfix:after {
